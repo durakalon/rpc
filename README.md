@@ -15,8 +15,9 @@ La description complète du projet est disponible en pdf `Projet RPC.pdf`
 ## Outils
 
 Ce répertoire contient les outils suivants :
-- `generate.py` : générateur de données d’entrée
+- `generate.py` : générateur de données d'entrée
 - `visualize.py` : visualisateur de données de sortie
+- `ad-hoc/` : solveur ad-hoc basé sur l'algorithme First Fit Decreasing
 
 ### `generate.py`
 
@@ -40,5 +41,24 @@ Utiliser la commande :
 python3 visualize.py --help
 ```
 
-Pour voir comment l’utiliser.
+Pour voir comment l'utiliser.
 
+### `ad-hoc/`
+
+Solveur ad-hoc pour le problème de bin packing 3D. Utilise l'algorithme First Fit Decreasing avec plusieurs heuristiques de tri.
+
+**Utilisation rapide :**
+
+```bash
+# Résoudre depuis stdin
+python ad-hoc/run.py < input.sample > output.txt
+
+# Résoudre depuis un fichier
+python ad-hoc/run.py -i input.sample -o output.txt
+
+# Mode verbeux avec statistiques
+python ad-hoc/run.py -i input.sample -v
+
+# Trouver automatiquement la meilleure heuristique
+python ad-hoc/run.py -i input.sample --best -v
+```

@@ -315,7 +315,7 @@ if __name__ == "__main__":
             continue
         blocks.append((i, (x0, y0, z0, x1, y1, z1)))
         i += 1
-    (L, W, H) = args.truck_dimensions
+    (L, H, W) = args.truck_dimensions
     # Drawing the truck
     svg_content.append(voxel(-2, 0, 0, 0, H + 10, W + 10, rgb(64, 64, 64), (0, 0, 0, L, H, W)))
     svg_content.append(voxel(0, -2, 0, L + 10, 0, W + 10, rgb(32, 32, 32), (0, 0, 0, L, H, W)))
