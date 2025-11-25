@@ -10,7 +10,7 @@ adresses. Votre objectif est d′optimiser la répartition des colis dans les v�
 le nombre de véhicules utilisés tout en respectant les capacités de charge maximale de chaque
 véhicules.
 
-La description complète du projet est disponible sur Moodle [sujet.pdf](https://moodle.epita.fr/course/view.php?id=2188).
+La description complète du projet est disponible en pdf `Projet RPC.pdf`
 
 ## Outils
 
