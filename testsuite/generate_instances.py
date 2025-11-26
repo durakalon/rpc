@@ -75,6 +75,121 @@ class InstanceGenerator:
             print(f"[ERR] Erreur lors de la generation de {name}: {result.stderr}")
             return False
     
+    def generate_likely_sat_instance(self, name: str, league: str, num_items: int,
+                             vehicle_size: tuple, with_time: bool = False):
+        """
+        Génère une instance probablement SAT (mais pas garanti)
+        
+        Stratégie: on génère des items de petite taille pour augmenter la probabilité SAT
+        - Items petits (max 30% des dimensions du véhicule)
+        - Volume total < 40% du volume du véhicule
+        ATTENTION: Cela n'est PAS une garantie (bin packing 3D NP-complet)
+        """
+        league_dir = self.output_dir / league
+        league_dir.mkdir(parents=True, exist_ok=True)
+        output_file = league_dir / f"{name}.txt"
+        
+        import random
+        random.seed(hash(name))
+        
+        vx, vy, vz = vehicle_size
+        
+        # Écrire le véhicule
+        lines = [f"{vx} {vy} {vz}"]
+        lines.append(str(num_items))
+        
+        # Générer des items qui tiennent
+        max_item_x = min(vx * 0.3, 150)
+        max_item_y = min(vy * 0.3, 150)
+        max_item_z = min(vz * 0.3, 150)
+        
+        for i in range(num_items):
+            ix = random.randint(10, int(max_item_x)) // 10 * 10
+            iy = random.randint(10, int(max_item_y)) // 10 * 10
+            iz = random.randint(10, int(max_item_z)) // 10 * 10
+            
+            # Contrainte de temps pour Gold
+            if league == "gold" and with_time:
+                delivery = random.randint(0, 1000)
+            else:
+                delivery = -1
+            
+            lines.append(f"{ix} {iy} {iz} {delivery}")
+        
+        # Sauvegarder
+        with open(output_file, 'w') as f:
+            f.write('\n'.join(lines) + '\n')
+        
+        metadata = {
+            'name': name,
+            'league': league,
+            'type': 'likely_SAT',
+            'num_items': num_items,
+            'vehicle_size': vehicle_size,
+            'file': str(output_file.relative_to(self.output_dir.parent))
+        }
+        self.instances_metadata.append(metadata)
+        print(f"[OK] Genere: {output_file.relative_to(self.output_dir.parent)}")
+        return True
+    
+    def generate_likely_unsat_instance(self, name: str, league: str, num_items: int,
+                               vehicle_size: tuple, item_scale: float = 2.0):
+        """
+        Génère une instance probablement UNSAT (mais pas garanti)
+        
+        Stratégie: items volontairement grands ou nombreux
+        - Items de taille moyenne = vehicle_size / sqrt(num_items) * item_scale
+        - item_scale > 3.0 rend UNSAT très probable (mais pas certain)
+        ATTENTION: Même avec un gros item_scale, un solveur efficace peut trouver SAT
+        """
+        league_dir = self.output_dir / league
+        league_dir.mkdir(parents=True, exist_ok=True)
+        output_file = league_dir / f"{name}.txt"
+        
+        import random
+        import math
+        random.seed(hash(name))
+        
+        vx, vy, vz = vehicle_size
+        
+        # Écrire le véhicule
+        lines = [f"{vx} {vy} {vz}"]
+        lines.append(str(num_items))
+        
+        # Items volontairement trop grands
+        avg_size = (vx + vy + vz) / 3.0 / math.sqrt(num_items) * item_scale
+        
+        for i in range(num_items):
+            ix = int(random.uniform(avg_size * 0.8, avg_size * 1.2)) // 10 * 10
+            iy = int(random.uniform(avg_size * 0.8, avg_size * 1.2)) // 10 * 10
+            iz = int(random.uniform(avg_size * 0.8, avg_size * 1.2)) // 10 * 10
+            
+            # Assurer les contraintes min/max
+            ix = max(10, min(ix, 500))
+            iy = max(10, min(iy, 500))
+            iz = max(10, min(iz, 500))
+            
+            delivery = -1
+            lines.append(f"{ix} {iy} {iz} {delivery}")
+        
+        # Sauvegarder
+        with open(output_file, 'w') as f:
+            f.write('\n'.join(lines) + '\n')
+        
+        metadata = {
+            'name': name,
+            'league': league,
+            'type': 'likely_UNSAT',
+            'num_items': num_items,
+            'vehicle_size': vehicle_size,
+            'item_scale': item_scale,
+            'file': str(output_file.relative_to(self.output_dir.parent))
+        }
+        self.instances_metadata.append(metadata)
+        print(f"[OK] Genere: {output_file.relative_to(self.output_dir.parent)}")
+        return True
+    
+    
     def save_metadata(self, filename: str = "instances_metadata.json"):
         """Sauvegarde les métadonnées de toutes les instances"""
         metadata_file = self.output_dir / filename
@@ -95,105 +210,94 @@ def generate_test_suite():
     # ============ BRONZE LEAGUE (≤10 colis) ============
     print("\n=== BRONZE LEAGUE ===")
     
-    # Cas simples
-    generator.generate_instance("bronze_easy_01", "bronze", 42)
-    generator.generate_instance("bronze_easy_02", "bronze", 123)
-    generator.generate_instance("bronze_easy_03", "bronze", 456)
+    # Instances aléatoires (generate.py)
+    print("  [Random instances]")
+    generator.generate_instance("bronze_random_01", "bronze", 42)
+    generator.generate_instance("bronze_random_02", "bronze", 123)
+    generator.generate_instance("bronze_random_03", "bronze", 456)
+    generator.generate_instance("bronze_random_04", "bronze", 789)
+    generator.generate_instance("bronze_random_05", "bronze", 1011)
     
-    # Cas avec colis variés
-    generator.generate_instance("bronze_varied_01", "bronze", 789)
-    generator.generate_instance("bronze_varied_02", "bronze", 1011)
+    # Instances probablement SAT (items petits)
+    print("  [Likely SAT instances]")
+    generator.generate_likely_sat_instance("bronze_likely_sat_01", "bronze", num_items=5, 
+                                   vehicle_size=(200, 150, 150))
+    generator.generate_likely_sat_instance("bronze_likely_sat_02", "bronze", num_items=8,
+                                   vehicle_size=(300, 200, 200))
+    generator.generate_likely_sat_instance("bronze_likely_sat_03", "bronze", num_items=3,
+                                   vehicle_size=(150, 150, 150))
     
-    # Cas dense (colis grands)
-    generator.generate_instance("bronze_dense", "bronze", 2000,
-                              max_item_dims="300x300x300")
-    
-    # Cas sparse (petits colis)
-    generator.generate_instance("bronze_sparse", "bronze", 2001,
-                              max_item_dims="100x100x100")
-    
-    # Cas avec véhicule petit
-    generator.generate_instance("bronze_small_truck", "bronze", 2002,
-                              max_truck_dims="100x100x100")
+    # Instances probablement UNSAT (items très grands)
+    print("  [Likely UNSAT instances]")
+    generator.generate_likely_unsat_instance("bronze_likely_unsat_01", "bronze", num_items=10,
+                                     vehicle_size=(100, 100, 100), item_scale=3.5)
+    generator.generate_likely_unsat_instance("bronze_likely_unsat_02", "bronze", num_items=8,
+                                     vehicle_size=(80, 80, 80), item_scale=3.0)
     
     # ============ SILVER LEAGUE (≤100 colis) ============
     print("\n=== SILVER LEAGUE ===")
     
-    # Instances standard
+    # Instances aléatoires
+    print("  [Random instances]")
     for i, seed in enumerate([3000, 3100, 3200, 3300, 3400], 1):
-        generator.generate_instance(f"silver_standard_{i:02d}", "silver", seed)
+        generator.generate_instance(f"silver_random_{i:02d}", "silver", seed)
     
-    # Cas dense
-    generator.generate_instance("silver_dense_01", "silver", 4000,
-                              max_item_dims="350x350x350")
-    generator.generate_instance("silver_dense_02", "silver", 4001,
-                              max_item_dims="400x400x400")
+    # Instances probablement SAT (items petits)
+    print("  [Likely SAT instances]")
+    generator.generate_likely_sat_instance("silver_likely_sat_01", "silver", num_items=30,
+                                   vehicle_size=(350, 250, 250))
+    generator.generate_likely_sat_instance("silver_likely_sat_02", "silver", num_items=50,
+                                   vehicle_size=(400, 300, 280))
+    generator.generate_likely_sat_instance("silver_likely_sat_03", "silver", num_items=20,
+                                   vehicle_size=(300, 200, 200))
+    generator.generate_likely_sat_instance("silver_likely_sat_04", "silver", num_items=70,
+                                   vehicle_size=(400, 350, 300))
     
-    # Cas sparse
-    generator.generate_instance("silver_sparse_01", "silver", 4100,
-                              max_item_dims="150x150x150")
-    generator.generate_instance("silver_sparse_02", "silver", 4101,
-                              max_item_dims="100x100x100")
-    
-    # Cas avec colis allongés (simulation)
-    generator.generate_instance("silver_elongated_01", "silver", 4200,
-                              max_item_dims="500x200x200")
-    generator.generate_instance("silver_elongated_02", "silver", 4201,
-                              max_item_dims="450x150x150")
-    
-    # Cas avec colis plats
-    generator.generate_instance("silver_flat_01", "silver", 4300,
-                              max_item_dims="400x400x100")
-    generator.generate_instance("silver_flat_02", "silver", 4301,
-                              max_item_dims="450x450x50")
-    
-    # Cas avec petit véhicule (difficile)
-    generator.generate_instance("silver_small_truck", "silver", 4400,
-                              max_truck_dims="150x150x150")
-    
-    # Cas avec grand véhicule (facile)
-    generator.generate_instance("silver_large_truck", "silver", 4500,
-                              max_truck_dims="400x400x400")
+    # Instances probablement UNSAT (items trop grands ou trop nombreux)
+    print("  [Likely UNSAT instances]")
+    generator.generate_likely_unsat_instance("silver_likely_unsat_01", "silver", num_items=80,
+                                     vehicle_size=(200, 150, 150), item_scale=3.0)
+    generator.generate_likely_unsat_instance("silver_likely_unsat_02", "silver", num_items=60,
+                                     vehicle_size=(180, 180, 180), item_scale=2.8)
+    generator.generate_likely_unsat_instance("silver_likely_unsat_03", "silver", num_items=100,
+                                     vehicle_size=(150, 150, 150), item_scale=3.5)
     
     # ============ GOLD LEAGUE (≤1000 colis) ============
     print("\n=== GOLD LEAGUE ===")
     
-    # Instances standard
+    # Instances aléatoires
+    print("  [Random instances]")
     for i, seed in enumerate([5000, 5100, 5200, 5300, 5400], 1):
-        generator.generate_instance(f"gold_standard_{i:02d}", "gold", seed)
+        generator.generate_instance(f"gold_random_{i:02d}", "gold", seed)
     
-    # Tests de scalabilité
-    for i, seed in enumerate([6000, 6100, 6200], 1):
-        generator.generate_instance(f"gold_scalability_{i:02d}", "gold", seed)
+    # Instances probablement SAT (items petits)
+    print("  [Likely SAT instances]")
+    generator.generate_likely_sat_instance("gold_likely_sat_01", "gold", num_items=200,
+                                   vehicle_size=(400, 350, 300))
+    generator.generate_likely_sat_instance("gold_likely_sat_02", "gold", num_items=400,
+                                   vehicle_size=(450, 400, 350))
+    generator.generate_likely_sat_instance("gold_likely_sat_03", "gold", num_items=100,
+                                   vehicle_size=(350, 300, 250))
+    generator.generate_likely_sat_instance("gold_likely_sat_04", "gold", num_items=600,
+                                   vehicle_size=(500, 450, 400))
     
-    # Cas dense (difficile)
-    generator.generate_instance("gold_dense_01", "gold", 7000,
-                              max_item_dims="400x400x400")
-    generator.generate_instance("gold_dense_02", "gold", 7001,
-                              max_item_dims="450x450x450")
+    # Instances probablement UNSAT (items très grands)
+    print("  [Likely UNSAT instances]")
+    generator.generate_likely_unsat_instance("gold_likely_unsat_01", "gold", num_items=500,
+                                     vehicle_size=(250, 200, 200), item_scale=3.5)
+    generator.generate_likely_unsat_instance("gold_likely_unsat_02", "gold", num_items=800,
+                                     vehicle_size=(300, 250, 250), item_scale=3.0)
+    generator.generate_likely_unsat_instance("gold_likely_unsat_03", "gold", num_items=1000,
+                                     vehicle_size=(200, 200, 200), item_scale=4.0)
     
-    # Cas sparse (facile)
-    generator.generate_instance("gold_sparse_01", "gold", 7100,
-                              max_item_dims="100x100x100")
-    generator.generate_instance("gold_sparse_02", "gold", 7101,
-                              max_item_dims="150x150x150")
-    
-    # Cas mixtes (réaliste)
-    generator.generate_instance("gold_mixed_01", "gold", 7200,
-                              max_item_dims="350x350x350")
-    generator.generate_instance("gold_mixed_02", "gold", 7201,
-                              max_item_dims="300x300x300")
-    
-    # Cas avec contraintes de temps (Gold uniquement)
-    generator.generate_instance("gold_timed_01", "gold", 8000)
-    generator.generate_instance("gold_timed_02", "gold", 8001)
-    generator.generate_instance("gold_timed_03", "gold", 8002)
-    
-    # Cas extrêmes
-    generator.generate_instance("gold_extreme_dense", "gold", 9000,
-                              max_item_dims="490x490x490")
-    generator.generate_instance("gold_extreme_sparse", "gold", 9100,
-                              max_item_dims="50x50x50")
+    # Tests de scalabilité (avec contraintes de temps)
+    print("  [Scalability instances]")
+    generator.generate_likely_sat_instance("gold_likely_scale_01", "gold", num_items=300,
+                                   vehicle_size=(400, 350, 300), with_time=True)
+    generator.generate_likely_sat_instance("gold_likely_scale_02", "gold", num_items=700,
+                                   vehicle_size=(450, 400, 350), with_time=True)
+    generator.generate_likely_sat_instance("gold_likely_scale_03", "gold", num_items=1000,
+                                   vehicle_size=(500, 450, 400), with_time=True)
     
     # Sauvegarder les métadonnées
     generator.save_metadata()
