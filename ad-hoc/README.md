@@ -52,8 +52,9 @@ Exemple :
 #### 1. **Classes de Données** (`solver.py`)
 
 - **`Item`** : Représente un colis avec dimensions et contraintes
-  - Propriétés : `volume`, `base_area`, `dimensions`
-  - Méthodes : calcul automatique des métriques
+  - Propriétés : `volume`, `base_area`, `dimensions`, `longest_side`
+  - **Nouveau** : Orientations précomputées (6 permutations, dédupliquées)
+  - Méthodes : `filter_orientations(vehicle)` pour filtrage optimisé
 
 - **`Vehicle`** : Représente un véhicule
   - Propriétés : dimensions, volume
@@ -62,46 +63,86 @@ Exemple :
   - Méthodes : `overlaps_with()` pour détection de chevauchement
   
 - **`VehiclePacker`** : Gère le remplissage d'un véhicule unique
-  - Algorithme de placement : Bottom-Left-Back
-  - Détection de collisions
-  - Gestion de toutes les orientations possibles
+  - Algorithme de placement : Bottom-Left-Back amélioré
+  - **Nouveau** : Support des zones de livraison (x_min, x_max)
+  - **Nouveau** : `try_add_item_with_score()` pour Best-Fit
+  - **Nouveau** : `remove_item()` pour redistribution
+  - Détection de collisions optimisée
+  - Déduplication des positions candidates
 
 #### 2. **Algorithme Principal** (`BinPackingSolver`)
 
-**Approche : First Fit Decreasing (FFD) avec variantes**
+**Approche : Best Fit Decreasing (BFD) + Local Search**
 
 ```
-Pour chaque colis (dans l'ordre du tri) :
-    1. Essayer de placer dans un véhicule existant
-    2. Si impossible, créer un nouveau véhicule
-    3. Si ne rentre nulle part, marquer comme non placé
+Phase 1 - Construction initiale :
+  Pour chaque colis (trié par contrainte de livraison + heuristique) :
+    1. Calculer le score pour chaque véhicule existant
+    2. Choisir le véhicule avec le meilleur score (utilisation maximale)
+    3. Si aucun ne convient, créer un nouveau véhicule
+    4. Appliquer les contraintes de zone de livraison si applicable
+
+Phase 2 - Optimisation locale (Local Search) :
+  Répéter jusqu'à convergence (max 10 itérations) :
+    1. Identifier le véhicule le moins rempli
+    2. Tenter de redistribuer ses colis dans les autres véhicules
+    3. Si réussi, supprimer ce véhicule
+    4. Renuméroter les véhicules restants
 ```
 
-**Stratégie de placement (Bottom-Left-Back) :**
-- Génère des positions candidates (coins des colis existants + origine)
+**Stratégie de placement (Bottom-Left-Back améliorée) :**
+- Génère des positions candidates (set dédupliqué)
+- Filtre par zones de livraison si applicable
 - Trie par priorité : z croissant, puis y, puis x
-- Teste toutes les orientations du colis
+- Teste les orientations précomputées et filtrées
 - Vérifie l'absence de chevauchement et de dépassement
 
-#### 3. **Heuristiques de Tri**
+#### 3. **Contraintes de Livraison (League Gold)**
 
-Quatre heuristiques implémentées :
+**Gestion des contraintes d'ordre :**
+- Groupement des colis par temps de livraison (D)
+- Allocation de zones spatiales le long de l'axe x (longueur du camion)
+- Principe : colis livrés en premier (D plus petit) → zones arrière (x plus grand)
+- Colis non contraints (D=-1) peuvent utiliser tout l'espace
+
+**Calcul des zones :**
+- Allocation proportionnelle au volume de chaque groupe de livraison
+- Zones contigües pour éviter la fragmentation
+- Respect automatique dans les méthodes de placement
+
+#### 4. **Heuristiques de Tri**
+
+Quatre heuristiques implémentées avec support des contraintes de livraison :
 
 1. **`VOLUME_DECREASING`** (défaut)
-   - Trie par volume décroissant
+   - Clé primaire : temps de livraison (D croissant)
+   - Clé secondaire : volume décroissant
    - Meilleure pour maximiser l'utilisation
 
 2. **`LONGEST_SIDE_DECREASING`**
-   - Trie par dimension maximale décroissante
+   - Clé primaire : temps de livraison (D croissant)
+   - Clé secondaire : dimension maximale décroissante
    - Utile pour les colis allongés
 
 3. **`AREA_DECREASING`**
-   - Trie par surface de base décroissante
+   - Clé primaire : temps de livraison (D croissant)
+   - Clé secondaire : surface de base décroissante
    - Bon pour les colis plats
 
 4. **`HEIGHT_DECREASING`**
-   - Trie par hauteur décroissante
+   - Clé primaire : temps de livraison (D croissant)
+   - Clé secondaire : hauteur décroissante
    - Optimise l'empilement vertical
+
+**Note** : Les colis contraints (D ≥ 0) sont toujours traités avant les non-contraints (D = -1)
+
+#### 5. **Validation de Solution**
+
+**Nouveau** : Fonction `validate_solution()` qui vérifie :
+- Respect des dimensions du véhicule (aucun dépassement)
+- Absence de chevauchement entre colis
+- Vérification basique des contraintes d'ordre de livraison
+- Rapports détaillés en mode verbose
 
 ## Utilisation
 
@@ -146,21 +187,64 @@ python run.py -i input.txt --best -v -o output.txt
 
 ### Complexité Temporelle
 
+**Phase de construction :**
 - **Tri** : O(N log N) où N = nombre de colis
-- **Placement par colis** : O(N × P × O × C)
-  - P : nombre de colis déjà placés (≤ N)
-  - O : orientations testées (≤ 6)
-  - C : positions candidates (≤ 3P + 1)
-- **Total** : O(N² × P) dans le pire cas
+- **Placement par colis** : O(V × N × P × O × C)
+  - V : nombre de véhicules (≤ N)
+  - P : nombre de colis déjà placés par véhicule (≤ N)
+  - O : orientations valides (≤ 6, précomputées)
+  - C : positions candidates dédupliquées (≤ 3P + 1)
+- **Best-Fit** : O(V) comparaisons par colis
+
+**Phase d'optimisation locale :**
+- **Itérations** : O(V) maximum (10 itérations max)
+- **Par itération** : O(P × V) pour redistribuer les colis
+
+**Total** : O(N² × V × P) dans le pire cas, mais linéaire en pratique
 
 ### Complexité Spatiale
 
-- O(N) pour stocker les colis et placements
-- O(V × P) pour les véhicules et leurs placements
+- **Items et orientations** : O(N) 
+- **Véhicules et placements** : O(V × P)
+- **Zones de livraison** : O(D) où D = nombre de temps de livraison distincts
+- **Positions candidates** : O(P) par recherche (set dédupliqué)
+
+**Total** : O(N + V × P) ≈ O(N) en pratique
 
 ### Optimisations Implémentées
 
-1. **Tri préalable** : Réduit les tentatives infructueuses
-2. **Bottom-Left-Back** : Positions candidates limitées
-3. **Early termination** : Arrêt dès qu'une position valide est trouvée
-4. **Vérification volumétrique** : Évite les essais impossibles
+1. **Orientations précomputées** : 
+   - Calcul unique par item à l'initialisation
+   - Déduplication automatique (cubes, etc.)
+   - Filtrage par véhicule pour éviter tests inutiles
+
+2. **Best-Fit** : 
+   - Meilleure utilisation des véhicules
+   - Réduction du nombre total de véhicules
+   - Score sans modification d'état (efficace)
+
+3. **Déduplication des candidats** : 
+   - Utilisation de sets pour éliminer positions identiques
+   - Filtrage précoce des positions hors-zone
+
+4. **Local Search** : 
+   - Post-optimisation pour réduire le nombre de véhicules
+   - Convergence rapide (généralement 2-3 itérations)
+   - Arrêt automatique si aucune amélioration
+
+5. **Zones de livraison** : 
+   - Calcul unique au début
+   - Application directe lors du placement
+   - Pas de rétroaction nécessaire
+
+6. **Early termination** : 
+   - Arrêt dès qu'une position valide est trouvée
+   - Vérification volumétrique avant test géométrique
+
+
+## Fichiers Importants
+
+- **`solver.py`** : Implémentation du solveur (classes et algorithmes)
+- **`run.py`** : Script d'exécution avec CLI
+- **`README.md`** : Ce fichier
+- **`../testsuite/`** : Suite de tests et validation
