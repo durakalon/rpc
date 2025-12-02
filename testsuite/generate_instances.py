@@ -281,6 +281,11 @@ def generate_test_suite():
     generator.generate_likely_sat_instance("gold_likely_sat_04", "gold", num_items=600,
                                    vehicle_size=(500, 450, 400))
     
+    # Instance petite pour vérification manuelle
+    print("  [Manual verification instance]")
+    generator.generate_likely_sat_instance("gold_manual_check", "gold", num_items=100,
+                                   vehicle_size=(300, 250, 200), with_time=True)
+    
     # Instances probablement UNSAT (items très grands)
     print("  [Likely UNSAT instances]")
     generator.generate_likely_unsat_instance("gold_likely_unsat_01", "gold", num_items=500,
