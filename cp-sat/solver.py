@@ -107,140 +107,194 @@ def solve_cp_sat(vehicle: Vehicle, items: List[Item], max_time_seconds: float = 
 def solve_for_k_vehicles(vehicle: Vehicle, items: List[Item], k: int, time_limit: float) -> Optional[List[Placement]]:
     model = cp_model.CpModel()
     
-    # Variables
-    # Pour chaque item, on a besoin de sa position, ses dimensions (orientation), et son véhicule
+    n = len(items)
     
-    # x, y, z coordinates
-    x = []
-    y = []
-    z = []
+    # --- VARIABLES ---
     
-    # Effective dimensions (after rotation)
-    lx = []
-    ly = []
-    lz = []
+    # 1. Coordonnées Globales (Approche "Giant Bin")
+    # On aligne virtuellement les K véhicules sur l'axe X.
+    # X_global va de 0 à K * L.
+    # Le véhicule k occupe l'intervalle [k*L, (k+1)*L].
+    x_global = [model.NewIntVar(0, k * vehicle.length, f'x_global_{i}') for i in range(n)]
+    y = [model.NewIntVar(0, vehicle.width, f'y_{i}') for i in range(n)]
+    z = [model.NewIntVar(0, vehicle.height, f'z_{i}') for i in range(n)]
     
-    # Vehicle assignment
-    v = []
+    # 2. Coordonnées Locales & Index Véhicule
+    # x_local est la position relative dans le véhicule (0 à L)
+    x_local = [model.NewIntVar(0, vehicle.length, f'x_local_{i}') for i in range(n)]
+    bin_idx = [model.NewIntVar(0, k - 1, f'bin_{i}') for i in range(n)]
     
-    # Interval variables for non-overlap (we need 3 intervals per item per dimension? No)
-    # CP-SAT has AddNoOverlap3D? No.
-    # We use NoOverlap2D? No.
-    # We use NoOverlap on intervals.
-    
-    # Since we have multiple bins, we can treat it as a single large bin of size (L*K, W, H) ?
-    # Or (L, W, H) and use a vehicle variable.
-    # Using vehicle variable makes non-overlap conditional:
-    # if v[i] == v[j], then no overlap.
-    
-    # This implies: v[i] != v[j] OR x_overlap OR y_overlap OR z_overlap is false.
-    
-    # Let's define variables
+    # 3. Dimensions effectives (après rotation)
+    lx = [model.NewIntVar(0, max(vehicle.length, vehicle.width, vehicle.height), f'lx_{i}') for i in range(n)]
+    ly = [model.NewIntVar(0, max(vehicle.length, vehicle.width, vehicle.height), f'ly_{i}') for i in range(n)]
+    lz = [model.NewIntVar(0, max(vehicle.length, vehicle.width, vehicle.height), f'lz_{i}') for i in range(n)]
+
+    # Liste des supports valides pour la gravité
+    supports = [[] for _ in range(n)]
+
+    # --- CONTRAINTES INDIVIDUELLES ---
+
     for i, item in enumerate(items):
-        # Vehicle index
-        v.append(model.NewIntVar(0, k - 1, f'v_{i}'))
-        
-        # Position
-        x.append(model.NewIntVar(0, vehicle.length, f'x_{i}'))
-        y.append(model.NewIntVar(0, vehicle.width, f'y_{i}'))
-        z.append(model.NewIntVar(0, vehicle.height, f'z_{i}'))
-        
-        # Dimensions (orientation)
-        # 6 orientations possible.
-        # We can use 3 variables for dimensions and constrain them.
-        l_var = model.NewIntVarFromDomain(cp_model.Domain.FromValues([item.length, item.width, item.height]), f'l_{i}')
-        w_var = model.NewIntVarFromDomain(cp_model.Domain.FromValues([item.length, item.width, item.height]), f'w_{i}')
-        h_var = model.NewIntVarFromDomain(cp_model.Domain.FromValues([item.length, item.width, item.height]), f'h_{i}')
-        
-        lx.append(l_var)
-        ly.append(w_var)
-        lz.append(h_var)
-        
-        # Constraints on dimensions: must be a permutation of original dimensions
-        # We can use a boolean variable for each of the 6 rotations
-        # Or simpler: l*w*h = Volume (already true if domain is correct? No, 10*10*10 vs 10*10*20)
-        # And l+w+h = sum(dims) (necessary but not sufficient)
-        # And l^2 + w^2 + h^2 = sum(dims^2) (sufficient for 3 numbers?)
-        # Actually, for 3 numbers, sum and product and sum of squares is usually sufficient to identify the set.
-        
-        # Or just use booleans for the 6 permutations.
-        # (L, W, H), (L, H, W), (W, L, H), (W, H, L), (H, L, W), (H, W, L)
-        
-        orientations = [
+        # A. Orientation (6 rotations possibles)
+        orientations = list(set([
             (item.length, item.width, item.height),
             (item.length, item.height, item.width),
             (item.width, item.length, item.height),
             (item.width, item.height, item.length),
             (item.height, item.length, item.width),
             (item.height, item.width, item.length)
-        ]
-        # Remove duplicates
-        orientations = list(set(orientations))
-        
+        ]))
         b_orient = [model.NewBoolVar(f'orient_{i}_{j}') for j in range(len(orientations))]
         model.Add(sum(b_orient) == 1)
         
-        model.Add(l_var == sum(b_orient[j] * orientations[j][0] for j in range(len(orientations))))
-        model.Add(w_var == sum(b_orient[j] * orientations[j][1] for j in range(len(orientations))))
-        model.Add(h_var == sum(b_orient[j] * orientations[j][2] for j in range(len(orientations))))
+        model.Add(lx[i] == sum(b_orient[j] * orientations[j][0] for j in range(len(orientations))))
+        model.Add(ly[i] == sum(b_orient[j] * orientations[j][1] for j in range(len(orientations))))
+        model.Add(lz[i] == sum(b_orient[j] * orientations[j][2] for j in range(len(orientations))))
+
+        # B. Lien Global <-> Local
+        # x_global = bin_idx * L + x_local
+        model.Add(x_global[i] == bin_idx[i] * vehicle.length + x_local[i])
         
-        # Boundary constraints
-        # x + lx <= L
-        model.Add(x[i] + lx[i] <= vehicle.length)
+        # C. Limites du véhicule (Boundary)
+        # L'objet doit tenir entièrement dans son véhicule assigné
+        model.Add(x_local[i] + lx[i] <= vehicle.length)
         model.Add(y[i] + ly[i] <= vehicle.width)
         model.Add(z[i] + lz[i] <= vehicle.height)
 
-    # Non-overlap constraints
-    # For every pair i < j
-    for i in range(len(items)):
-        for j in range(i + 1, len(items)):
-            # Two items overlap if they are in the same vehicle AND they overlap in all 3 dimensions
-            # We want to enforce: NOT (same_vehicle AND overlap_x AND overlap_y AND overlap_z)
-            # <=> same_vehicle => (NOT overlap_x OR NOT overlap_y OR NOT overlap_z)
+        # D. Gravité (Option 1 : Au sol)
+        is_on_floor = model.NewBoolVar(f'floor_{i}')
+        model.Add(z[i] == 0).OnlyEnforceIf(is_on_floor)
+        model.Add(z[i] != 0).OnlyEnforceIf(is_on_floor.Not())
+        supports[i].append(is_on_floor)
+
+    # Symmetry Breaking : Si on a des items, on force le premier dans le premier véhicule
+    # Cela évite de tester les permutations de véhicules vides/pleins identiques
+    if n > 0:
+        model.Add(bin_idx[0] == 0)
+
+    # --- CONTRAINTES DE PAIRE ---
+    
+    for i in range(n):
+        for j in range(i + 1, n):
+            # E. Non-chevauchement (Non-overlap)
+            # On utilise les coordonnées GLOBALES.
+            # Si deux objets sont dans des véhicules différents, leurs x_global sont disjoints,
+            # donc la contrainte "left" ou "right" sera satisfaite trivialement.
             
-            # same_vehicle: v[i] == v[j]
-            b_same = model.NewBoolVar(f'same_{i}_{j}')
-            model.Add(v[i] == v[j]).OnlyEnforceIf(b_same)
-            model.Add(v[i] != v[j]).OnlyEnforceIf(b_same.Not())
+            left = model.NewBoolVar(f'left_{i}_{j}')   # i à gauche de j
+            right = model.NewBoolVar(f'right_{i}_{j}')  # i à droite de j
+            behind = model.NewBoolVar(f'behind_{i}_{j}') # i derrière j (Y)
+            front = model.NewBoolVar(f'front_{i}_{j}')   # i devant j (Y)
+            below = model.NewBoolVar(f'below_{i}_{j}')   # i dessous j (Z)
+            above = model.NewBoolVar(f'above_{i}_{j}')   # i dessus j (Z)
             
-            # Overlap in X: x[i] < x[j] + lx[j] AND x[j] < x[i] + lx[i]
-            # Non-overlap X: x[i] >= x[j] + lx[j] OR x[j] >= x[i] + lx[i]
-            
-            left = model.NewBoolVar(f'left_{i}_{j}') # i is left of j
-            right = model.NewBoolVar(f'right_{i}_{j}') # i is right of j
-            
-            model.Add(x[i] + lx[i] <= x[j]).OnlyEnforceIf(left)
-            model.Add(x[j] + lx[j] <= x[i]).OnlyEnforceIf(right)
-            
-            # Y
-            behind = model.NewBoolVar(f'behind_{i}_{j}')
-            front = model.NewBoolVar(f'front_{i}_{j}')
+            model.Add(x_global[i] + lx[i] <= x_global[j]).OnlyEnforceIf(left)
+            model.Add(x_global[j] + lx[j] <= x_global[i]).OnlyEnforceIf(right)
             model.Add(y[i] + ly[i] <= y[j]).OnlyEnforceIf(behind)
             model.Add(y[j] + ly[j] <= y[i]).OnlyEnforceIf(front)
-            
-            # Z
-            below = model.NewBoolVar(f'below_{i}_{j}')
-            above = model.NewBoolVar(f'above_{i}_{j}')
             model.Add(z[i] + lz[i] <= z[j]).OnlyEnforceIf(below)
             model.Add(z[j] + lz[j] <= z[i]).OnlyEnforceIf(above)
             
-            # If same vehicle, then at least one relative position must be true
-            model.AddBoolOr([left, right, behind, front, below, above]).OnlyEnforceIf(b_same)
+            # Ils ne doivent pas se chevaucher (au moins une séparation active)
+            model.AddBoolOr([left, right, behind, front, below, above])
+            
+            # F. Délais de livraison (Delivery Time - LIFO)
+            # Si i doit être livré AVANT j (D_i < D_j), i doit être plus proche de la porte.
+            # Porte supposée à x_local = Length. Donc i doit avoir un x_local plus grand.
+            # Cette contrainte ne s'applique que s'ils sont dans le MÊME véhicule.
+            
+            if items[i].delivery_time != -1 and items[j].delivery_time != -1:
+                b_same_bin = model.NewBoolVar(f'same_bin_{i}_{j}')
+                model.Add(bin_idx[i] == bin_idx[j]).OnlyEnforceIf(b_same_bin)
+                model.Add(bin_idx[i] != bin_idx[j]).OnlyEnforceIf(b_same_bin.Not())
+                
+                if items[i].delivery_time < items[j].delivery_time:
+                    model.Add(x_local[i] >= x_local[j]).OnlyEnforceIf(b_same_bin)
+                elif items[i].delivery_time > items[j].delivery_time:
+                    model.Add(x_local[j] >= x_local[i]).OnlyEnforceIf(b_same_bin)
 
-    # Solver
+            # G. Gravité (Option 2 : Supporté par un autre objet)
+            # j supporte i SI :
+            # 1. j est juste en dessous de i (contact Z)
+            # 2. Ils se chevauchent physiquement en X et Y (Area > 0)
+            # Note : Le chevauchement X global implique qu'ils sont dans le même véhicule.
+            
+            # Cas 1: j supporte i
+            j_supports_i = model.NewBoolVar(f'supp_{j}_{i}')
+            
+            # Contact Z
+            model.Add(z[j] + lz[j] == z[i]).OnlyEnforceIf(j_supports_i)
+            
+            # Chevauchement X Global (Strict inequality for overlap > 0)
+            # x_start_i < x_end_j  AND  x_start_j < x_end_i
+            model.Add(x_global[i] + 1 <= x_global[j] + lx[j]).OnlyEnforceIf(j_supports_i)
+            model.Add(x_global[j] + 1 <= x_global[i] + lx[i]).OnlyEnforceIf(j_supports_i)
+            
+            # Chevauchement Y
+            model.Add(y[i] + 1 <= y[j] + ly[j]).OnlyEnforceIf(j_supports_i)
+            model.Add(y[j] + 1 <= y[i] + ly[i]).OnlyEnforceIf(j_supports_i)
+            
+            supports[i].append(j_supports_i)
+            
+            # Cas 2: i supporte j (Symétrique)
+            i_supports_j = model.NewBoolVar(f'supp_{i}_{j}')
+            
+            model.Add(z[i] + lz[i] == z[j]).OnlyEnforceIf(i_supports_j)
+            model.Add(x_global[j] + 1 <= x_global[i] + lx[i]).OnlyEnforceIf(i_supports_j)
+            model.Add(x_global[i] + 1 <= x_global[j] + lx[j]).OnlyEnforceIf(i_supports_j)
+            model.Add(y[j] + 1 <= y[i] + ly[i]).OnlyEnforceIf(i_supports_j)
+            model.Add(y[i] + 1 <= y[j] + ly[j]).OnlyEnforceIf(i_supports_j)
+            
+            supports[j].append(i_supports_j)
+
+    # Application Gravité : Chaque objet doit être supporté (Sol OU Autre objet)
+    for i in range(n):
+        model.AddBoolOr(supports[i])
+
+    # --- OBJECTIF & HEURISTIQUES ---
+
+    # 1. Fonction Objectif : Compactage
+    # On veut remplir "du fond vers la sortie" (Minimiser X)
+    # Et "par le bas" (Minimiser Z)
+    # Priorité : X > Z > Y
+    # Cela permet de tasser les objets au fond et en bas, évitant les trous.
+    
+    # Coefficients pour l'ordre lexicographique
+    # On s'assure que la minimisation de X l'emporte sur Z, et Z sur Y.
+    coeff_y = 1
+    coeff_z = vehicle.width + 1
+    coeff_x = (vehicle.height + 1) * coeff_z
+    
+    # On minimise la somme pondérée des coordonnées
+    model.Minimize(sum(
+        coeff_x * x_global[i] + 
+        coeff_z * z[i] + 
+        coeff_y * y[i] 
+        for i in range(n)
+    ))
+
+    # 2. Stratégie de Recherche (Heuristique)
+    # On guide le solveur pour qu'il explore d'abord les positions au fond et en bas.
+    # Cela accélère grandement la recherche d'une première solution valide et compacte.
+    model.AddDecisionStrategy(x_global, cp_model.CHOOSE_LOWEST_MIN, cp_model.SELECT_MIN_VALUE)
+    model.AddDecisionStrategy(z, cp_model.CHOOSE_LOWEST_MIN, cp_model.SELECT_MIN_VALUE)
+    model.AddDecisionStrategy(y, cp_model.CHOOSE_LOWEST_MIN, cp_model.SELECT_MIN_VALUE)
+
+    # --- RÉSOLUTION ---
     solver = cp_model.CpSolver()
     solver.parameters.max_time_in_seconds = time_limit
-    solver.parameters.log_search_progress = False # Set to True for debugging
+    solver.parameters.log_search_progress = True
+    # solver.parameters.num_search_workers = 8 # Activer si multi-coeur disponible
     
     status = solver.Solve(model)
     
     if status == cp_model.OPTIMAL or status == cp_model.FEASIBLE:
         result = []
-        for i in range(len(items)):
+        for i in range(n):
             result.append(Placement(
                 item_id=items[i].id,
-                vehicle_id=solver.Value(v[i]),
-                x=solver.Value(x[i]),
+                vehicle_id=solver.Value(bin_idx[i]),
+                x=solver.Value(x_local[i]),
                 y=solver.Value(y[i]),
                 z=solver.Value(z[i]),
                 length=solver.Value(lx[i]),
