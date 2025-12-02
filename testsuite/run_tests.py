@@ -266,7 +266,7 @@ def main():
         print(f"[ERR] Solver not found: {solver_path}")
         sys.exit(1)
     
-    solver_command = ["python", str(solver_path)]
+    solver_command = ["python3", str(solver_path)]
     
     # Créer le runner
     runner = SolverRunner(

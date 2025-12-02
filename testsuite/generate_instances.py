@@ -40,7 +40,7 @@ class InstanceGenerator:
         
         # Construire la commande
         cmd = [
-            "python",
+            "python3",
             str(self.generate_script),
             "--league", league,
             "--seed", str(seed)
