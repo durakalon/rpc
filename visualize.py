@@ -455,7 +455,7 @@ def read_delivery_order(input_file_path):
     packages = []
     for i, line in enumerate(lines[2:]):
         if line.strip():
-            packages.append(i)  # Index représente l'ordre de livraison
+            packages.append(line.strip().split(' ')[-1])  # Valeur d'ordre de livraison
     
     return packages
 
@@ -528,11 +528,25 @@ if __name__ == "__main__":
     delivery_order_colors = {}
     total_blocks = len(blocks)
     
+    # Calculer les couleurs basées sur l'ordre de livraison
+    if args.show_order and delivery_order:
+        # Trier les delivery_order pour obtenir le rang de chaque colis
+        # delivery_order[i] = temps de livraison du colis i
+        # On veut colorer par rang (1er livré = couleur 0, 2e livré = couleur 1, etc.)
+        order_values = [(i, int(delivery_order[i])) for i in range(len(delivery_order)) if i < total_blocks]
+        sorted_by_delivery = sorted(order_values, key=lambda x: x[1])
+        
+        # Créer un mapping: index_colis -> rang dans l'ordre de livraison
+        delivery_rank = {}
+        for rank, (idx, _) in enumerate(sorted_by_delivery):
+            delivery_rank[idx] = rank
+    
     for (i, (x0, y0, z0, x1, y1, z1)) in blocks:
         # Choisir la couleur selon le mode
-        if args.show_order:
-            # Utiliser une color map progressive pour l'ordre de livraison
-            color = get_color_from_gradient(i, total_blocks, args.colormap)
+        if args.show_order and delivery_order and i < len(delivery_order):
+            # Utiliser le rang de livraison pour la couleur
+            rank = delivery_rank.get(i, i)
+            color = get_color_from_gradient(rank, total_blocks, args.colormap)
             delivery_order_colors[i] = color
         else:
             # Mode normal: couleur par bloc
