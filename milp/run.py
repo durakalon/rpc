@@ -1,5 +1,5 @@
 """
-Script d'exécution du solveur CP-SAT
+Script d'exécution du solveur MILP
 """
 
 import argparse
@@ -7,7 +7,7 @@ import sys
 from pathlib import Path
 from typing import List, Tuple
 
-from solver import solve_cp_sat, parse_input, format_output
+from solver import solve_milp, parse_input, format_output
 
 def read_input_file(filepath: str) -> str:
     """Lit un fichier d'entrée"""
@@ -20,7 +20,7 @@ def write_output_file(filepath: str, content: str):
         f.write(content)
 
 def main():
-    parser = argparse.ArgumentParser(description='Solveur CP-SAT pour le problème de bin packing 3D')
+    parser = argparse.ArgumentParser(description='Solveur MILP pour le problème de bin packing 3D')
     
     parser.add_argument(
         '-i', '--input',
@@ -32,22 +32,23 @@ def main():
     
     parser.add_argument(
         '-o', '--output',
+        nargs='?',
         type=str,
         help='Fichier de sortie (défaut: stdout)',
         default=None
     )
     
     parser.add_argument(
-        '-v', '--verbose',
-        action='store_true',
-        help='Mode verbeux (affiche les statistiques sur stderr)'
+        '-t', '--timeout',
+        type=float,
+        help='Temps maximum en secondes (défaut: 60)',
+        default=60.0
     )
     
     parser.add_argument(
-        '-t', '--timeout',
-        type=float,
-        default=60.0,
-        help='Temps limite en secondes (défaut: 60.0)'
+        '-v', '--verbose',
+        action='store_true',
+        help='Mode verbeux'
     )
     
     args = parser.parse_args()
@@ -62,19 +63,21 @@ def main():
     vehicle, items = parse_input(input_text)
     
     if not vehicle or not items:
-        output = "UNSAT"
+        result = "UNSAT"
     else:
+        if args.verbose:
+            print(f"Vehicle: {vehicle.length}x{vehicle.width}x{vehicle.height}", file=sys.stderr)
+            print(f"Items: {len(items)}", file=sys.stderr)
+        
         # Résolution
-        placements = solve_cp_sat(vehicle, items, max_time_seconds=args.timeout, verbose=args.verbose)
-        output = format_output(placements)
+        placements = solve_milp(vehicle, items, max_time_seconds=args.timeout, verbose=args.verbose)
+        result = format_output(placements)
     
     # Écriture de la sortie
     if args.output:
-        write_output_file(args.output, output)
-        if args.verbose:
-            print(f"\nRésultat écrit dans: {args.output}", file=sys.stderr)
+        write_output_file(args.output, result)
     else:
-        print(output)
+        print(result)
 
 if __name__ == "__main__":
     main()

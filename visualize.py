@@ -463,7 +463,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser("visualize.py")
     parser.add_argument("input", nargs="?", type=argparse.FileType("r"), default=sys.stdin,
                         help="Le fichier d'entrée (utilise stdin par défaut)")
-    parser.add_argument("--truck-no", type=int, default=0, dest="truck_no", help="Le numéro du véhicule à visualiser")
+    parser.add_argument("--truck-no", type=int, default=None, dest="truck_no", 
+                        help="Le numéro du véhicule à visualiser (si omis, affiche tous les camions)")
     parser.add_argument("--truck-dimensions", type=Dimension, default=MAX_TRUCK_DIMENSIONS,
                         dest="truck_dimensions", help="Dimensions du véhicule")
     parser.add_argument("--angle", type=str, default="front", choices=["front", "back", "left", "right", "top"],
@@ -483,14 +484,11 @@ if __name__ == "__main__":
     if args.show_order and args.order_file:
         delivery_order = read_delivery_order(args.order_file)
     
-    svg_width = 760 if args.show_order else 560
-    svg_content = []
-    svg_content.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="560">')
-    blocks = []
+    # Lire toutes les données d'entrée et regrouper par camion
+    all_blocks = {}  # truck_id -> [(item_index, coords), ...]
     first = True
-    i = 0
-    block_index = 0
-    for (i, line) in enumerate(args.input):
+    item_index = 0
+    for line in args.input:
         if first:
             first = False
             if line == "SAT\n":
@@ -502,74 +500,149 @@ if __name__ == "__main__":
         if line == "\n":
             break
         (truck, x0, y0, z0, x1, y1, z1) = map(int, line.split(" "))
-        if truck != args.truck_no:
-            continue
-        blocks.append((block_index, (x0, y0, z0, x1, y1, z1)))
-        block_index += 1
-        i += 1
+        if truck not in all_blocks:
+            all_blocks[truck] = []
+        all_blocks[truck].append((item_index, (x0, y0, z0, x1, y1, z1)))
+        item_index += 1
+    
+    # Déterminer quels camions afficher
+    if args.truck_no is not None:
+        trucks_to_show = [args.truck_no] if args.truck_no in all_blocks else []
+    else:
+        trucks_to_show = sorted(all_blocks.keys())
+    
+    if not trucks_to_show:
+        print("No trucks to display", file=sys.stderr)
+        exit(0)
+    
     (L, H, W) = args.truck_dimensions
-    # Drawing the truck
-    svg_content.append(voxel(-2, 0, 0, 0, H + 10, W + 10, rgb(64, 64, 64), (0, 0, 0, L, H, W), args.angle))
-    svg_content.append(voxel(0, -2, 0, L + 10, 0, W + 10, rgb(32, 32, 32), (0, 0, 0, L, H, W), args.angle))
-    svg_content.append(voxel(0, 0, -2, L + 10, H + 10, 0, rgb(0, 0, 0), (0, 0, 0, L, H, W), args.angle))
-    for y in range(0, W, 10):
-        for z in range(0, H, 10):
-            pass
-            # svg_content.append(voxel(-2, y, z, 0, y + 10, z + 10, rgb(64, 64, 64), (0, 0, 0, L, H, W)))
-    for x in range(0, L, 10):
-        for z in range(0, H, 10):
-            pass
-            # svg_content.append(voxel(x, -2, z, x + 10, 0, z + 10, rgb(32, 32, 32), (0, 0, 0, L, H, W)))
-        for y in range(0, W, 10):
-            pass
-            # svg_content.append(voxel(x, y, -2, x + 10, y + 10, 0, rgb(0, 0, 0), (0, 0, 0, L, H, W), args.angle))
-    # Drawing the blocks
-    voxels = []
-    delivery_order_colors = {}
-    total_blocks = len(blocks)
     
-    # Calculer les couleurs basées sur l'ordre de livraison
+    # Calculer les dimensions du SVG
+    num_trucks = len(trucks_to_show)
+    
+    # Espacement entre camions - grand espacement pour bien les séparer
+    truck_spacing = H + W + 150  # Espacement généreux en Y
+    
+    # Calculer la taille totale nécessaire en coordonnées isométriques
+    cos_30 = math.sqrt(3) / 2  # ≈ 0.866
+    sin_30 = 0.5
+    
+    # Calculer les bornes du dessin
+    # Pour la vue "front", la projection est: px = 200 + (x - y) * cos, py = 240 + (x + y - 2z) * sin
+    # Avec plusieurs camions, y va de 0 à (num_trucks-1) * truck_spacing + H
+    max_y_coord = (num_trucks - 1) * truck_spacing + H
+    
+    # Bornes approximatives en pixels:
+    # - x_min survient quand x=0, y=max_y_coord -> px = 200 - max_y_coord * cos
+    # - x_max survient quand x=L, y=0 -> px = 200 + L * cos
+    # - y_min survient quand x=0, y=0, z=W -> py = 240 - W
+    # - y_max survient quand x=L, y=max_y_coord, z=0 -> py = 240 + (L + max_y_coord) * sin
+    
+    px_min = 200 - max_y_coord * cos_30 - 50
+    px_max = 200 + L * cos_30 + 50
+    py_min = 240 - W - 100
+    py_max = 240 + (L + max_y_coord) * sin_30 + 50
+    
+    svg_width = int(px_max - px_min + 100)
+    svg_height = int(py_max - py_min + 100)
+    
+    if args.show_order:
+        svg_width += 250  # Espace pour la légende
+    
+    # Utiliser viewBox pour centrer et adapter le contenu
+    viewbox_x = int(px_min - 50)
+    viewbox_y = int(py_min - 50)
+    viewbox_w = svg_width
+    viewbox_h = svg_height
+    
+    svg_content = []
+    svg_content.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{svg_height}" viewBox="{viewbox_x} {viewbox_y} {viewbox_w} {viewbox_h}">')
+    
+    # Calculer les couleurs basées sur l'ordre de livraison GLOBAL (tous les items)
+    delivery_rank = {}
+    total_items_all = sum(len(blocks) for blocks in all_blocks.values())
+    
     if args.show_order and delivery_order:
-        # Trier les delivery_order pour obtenir le rang de chaque colis
-        # delivery_order[i] = temps de livraison du colis i
-        # On veut colorer par rang (1er livré = couleur 0, 2e livré = couleur 1, etc.)
-        order_values = [(i, int(delivery_order[i])) for i in range(len(delivery_order)) if i < total_blocks]
-        sorted_by_delivery = sorted(order_values, key=lambda x: x[1])
+        # Récupérer TOUS les items affichés
+        all_displayed_items = []
+        for truck_id in trucks_to_show:
+            for (item_idx, _) in all_blocks.get(truck_id, []):
+                if item_idx < len(delivery_order):
+                    all_displayed_items.append((item_idx, int(delivery_order[item_idx])))
         
-        # Créer un mapping: index_colis -> rang dans l'ordre de livraison
-        delivery_rank = {}
-        for rank, (idx, _) in enumerate(sorted_by_delivery):
-            delivery_rank[idx] = rank
+        # Trier par temps de livraison pour obtenir le rang GLOBAL
+        sorted_by_delivery = sorted(all_displayed_items, key=lambda x: x[1])
+        
+        # Créer un mapping: index_global -> rang GLOBAL
+        for global_rank, (item_idx, _) in enumerate(sorted_by_delivery):
+            delivery_rank[item_idx] = global_rank
     
-    for (i, (x0, y0, z0, x1, y1, z1)) in blocks:
-        # Choisir la couleur selon le mode
-        if args.show_order and delivery_order and i < len(delivery_order):
-            # Utiliser le rang de livraison pour la couleur
-            rank = delivery_rank.get(i, i)
-            color = get_color_from_gradient(rank, total_blocks, args.colormap)
-            delivery_order_colors[i] = color
-        else:
-            # Mode normal: couleur par bloc
-            color = COLORS[i % len(COLORS)]
+    all_voxels = []
+    delivery_order_colors = {}
+    
+    # Dessiner chaque camion avec un décalage
+    for truck_idx, truck_id in enumerate(trucks_to_show):
+        # Décalage pour ce camion (en Y pour créer l'effet côte à côte)
+        offset_y = truck_idx * truck_spacing
         
-        for x in range(x0, x1, 10):
-            for y in range(y0, y1, 10):
-                for z in range(z0, z1, 10):
-                    voxels.append(((x, y, z, x + 10, y + 10, z + 10),
-                                   voxel(x, y, z, x + 10, y + 10, z + 10, color,
-                                         (x0, y0, z0, x1, y1, z1), args.angle)))
-    voxels.sort(key=lambda it: (it[0][0] + it[0][1], it[0][2]))
-
-    visible_voxels = [ i for i in voxels if not is_hidden(i[0], voxels) ]
-
-    for voxel in visible_voxels:
-        (coord, shape) = voxel
+        blocks = all_blocks.get(truck_id, [])
+        
+        # Dessiner le camion (conteneur)
+        svg_content.append(voxel(-2, offset_y + 0, 0, 0, offset_y + H + 10, W + 10, 
+                                rgb(64, 64, 64), (0, offset_y, 0, L, offset_y + H, W), args.angle))
+        svg_content.append(voxel(0, offset_y - 2, 0, L + 10, offset_y + 0, W + 10, 
+                                rgb(32, 32, 32), (0, offset_y, 0, L, offset_y + H, W), args.angle))
+        svg_content.append(voxel(0, offset_y + 0, -2, L + 10, offset_y + H + 10, 0, 
+                                rgb(0, 0, 0), (0, offset_y, 0, L, offset_y + H, W), args.angle))
+        
+        # Ajouter le numéro du camion
+        # (on l'ajoutera en SVG text plus tard si besoin)
+        
+        # Dessiner les blocs de ce camion
+        for (i, (x0, y0, z0, x1, y1, z1)) in blocks:
+            # Choisir la couleur selon le mode
+            if args.show_order and delivery_order and i < len(delivery_order):
+                rank = delivery_rank.get(i, i)
+                color = get_color_from_gradient(rank, total_items_all, args.colormap)
+                delivery_order_colors[i] = color
+            else:
+                color = COLORS[i % len(COLORS)]
+            
+            # Ajouter l'offset Y pour ce camion
+            y0_offset = y0 + offset_y
+            y1_offset = y1 + offset_y
+            
+            for x in range(x0, x1, 10):
+                for y in range(y0_offset, y1_offset, 10):
+                    for z in range(z0, z1, 10):
+                        all_voxels.append(((x, y, z, x + 10, y + 10, z + 10),
+                                       voxel(x, y, z, x + 10, y + 10, z + 10, color,
+                                             (x0, y0_offset, z0, x1, y1_offset, z1), args.angle)))
+    
+    # Trier et filtrer les voxels visibles
+    all_voxels.sort(key=lambda it: (it[0][0] + it[0][1], it[0][2]))
+    visible_voxels = [i for i in all_voxels if not is_hidden(i[0], all_voxels)]
+    
+    for voxel_item in visible_voxels:
+        (coord, shape) = voxel_item
         svg_content.append(shape)
+    
+    # Ajouter les labels des camions
+    cos = math.sqrt(3) / 2
+    sin = 0.5
+    for truck_idx, truck_id in enumerate(trucks_to_show):
+        offset_y = truck_idx * truck_spacing
+        # Position du label (au-dessus du camion, centré sur le camion)
+        # Point central du camion: x=L/2, y=offset_y + H/2, z=W (au-dessus)
+        label_x = 200 + (L/2 - (offset_y + H/2)) * cos
+        label_y = 240 + ((L/2 + offset_y + H/2 - 2 * (W + 40)) * sin)
+        svg_content.append(f'<text x="{label_x}" y="{label_y}" font-family="Arial" font-size="16" '
+                          f'font-weight="bold" fill="#333" text-anchor="middle">Camion {truck_id}</text>')
     
     # Ajouter la légende si demandé
     if args.show_order and delivery_order_colors:
         svg_content.append(generate_legend(delivery_order_colors, colormap_mode=True, 
-                                          total_items=total_blocks, colormap=args.colormap))
+                                          total_items=total_items_all, colormap=args.colormap))
     
     svg_content.append("</svg>")
 

@@ -1,0 +1,615 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="503" height="575" viewBox="-29 -60 503 575">
+<path d="M 200.0 240.0 L 61.43593539448983 320.0 L 61.43593539448983 160.0 L 200.0 80.0 z" fill="Rgb(40, 40, 40, 255)" />
+<path d="M 200.0 240.0 L 61.43593539448983 320.0 z" fill="none" stroke="Rgb(40, 40, 40, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 200.0 80.0 z" fill="none" stroke="Rgb(40, 40, 40, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 59.703884586920935 319.0 L 61.43593539448983 320.0 L 61.43593539448983 160.0 L 59.703884586920935 159.0 z" fill="Rgb(83, 83, 83, 255)" />
+<path d="M 59.703884586920935 319.0 L 59.703884586920935 159.0 z" fill="none" stroke="Rgb(83, 83, 83, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 59.703884586920935 319.0 L 61.43593539448983 320.0 z" fill="none" stroke="Rgb(83, 83, 83, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 61.43593539448983 320.0 L 61.43593539448983 160.0 z" fill="none" stroke="Rgb(83, 83, 83, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 198.26794919243113 79.0 L 200.0 80.0 L 61.43593539448983 160.0 L 59.703884586920935 159.0 z" fill="Rgb(159, 159, 159, 255)" />
+<path d="M 200.0 80.0 L 61.43593539448983 160.0 z" fill="none" stroke="Rgb(159, 159, 159, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 198.26794919243113 79.0 L 59.703884586920935 159.0 z" fill="none" stroke="Rgb(159, 159, 159, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 198.26794919243113 79.0 L 200.0 80.0 z" fill="none" stroke="Rgb(159, 159, 159, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 59.703884586920935 159.0 L 61.43593539448983 160.0 z" fill="none" stroke="Rgb(159, 159, 159, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 383.59738560230096 344.0 L 381.8653347947321 345.0 L 381.8653347947321 185.0 L 383.59738560230096 184.0 z" fill="Rgb(20, 20, 20, 255)" />
+<path d="M 383.59738560230096 344.0 L 381.8653347947321 345.0 z" fill="none" stroke="Rgb(20, 20, 20, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 383.59738560230096 344.0 L 383.59738560230096 184.0 z" fill="none" stroke="Rgb(20, 20, 20, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 381.8653347947321 345.0 L 381.8653347947321 185.0 L 200.0 80.0 z" fill="Rgb(54, 54, 54, 255)" />
+<path d="M 200.0 240.0 L 200.0 80.0 z" fill="none" stroke="Rgb(54, 54, 54, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 381.8653347947321 345.0 z" fill="none" stroke="Rgb(54, 54, 54, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 381.8653347947321 345.0 L 381.8653347947321 185.0 z" fill="none" stroke="Rgb(54, 54, 54, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 201.73205080756887 79.0 L 383.59738560230096 184.0 L 381.8653347947321 185.0 L 200.0 80.0 z" fill="Rgb(143, 143, 143, 255)" />
+<path d="M 383.59738560230096 184.0 L 381.8653347947321 185.0 z" fill="none" stroke="Rgb(143, 143, 143, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 201.73205080756887 79.0 L 200.0 80.0 z" fill="none" stroke="Rgb(143, 143, 143, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 201.73205080756887 79.0 L 383.59738560230096 184.0 z" fill="none" stroke="Rgb(143, 143, 143, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 80.0 L 381.8653347947321 185.0 z" fill="none" stroke="Rgb(143, 143, 143, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 381.8653347947321 347.0 L 243.30127018922192 427.0 L 243.30127018922192 425.0 L 381.8653347947321 345.0 z" fill="Rgb(0, 0, 0, 255)" />
+<path d="M 381.8653347947321 347.0 L 243.30127018922192 427.0 z" fill="none" stroke="Rgb(0, 0, 0, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 381.8653347947321 347.0 L 381.8653347947321 345.0 z" fill="none" stroke="Rgb(0, 0, 0, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 61.43593539448983 322.0 L 243.30127018922192 427.0 L 243.30127018922192 425.0 L 61.43593539448983 320.0 z" fill="Rgb(25, 25, 25, 255)" />
+<path d="M 61.43593539448983 322.0 L 61.43593539448983 320.0 z" fill="none" stroke="Rgb(25, 25, 25, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 61.43593539448983 322.0 L 243.30127018922192 427.0 z" fill="none" stroke="Rgb(25, 25, 25, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 243.30127018922192 427.0 L 243.30127018922192 425.0 z" fill="none" stroke="Rgb(25, 25, 25, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 381.8653347947321 345.0 L 243.30127018922192 425.0 L 61.43593539448983 320.0 z" fill="Rgb(127, 127, 127, 255)" />
+<path d="M 381.8653347947321 345.0 L 243.30127018922192 425.0 z" fill="none" stroke="Rgb(127, 127, 127, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 61.43593539448983 320.0 z" fill="none" stroke="Rgb(127, 127, 127, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 381.8653347947321 345.0 z" fill="none" stroke="Rgb(127, 127, 127, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 61.43593539448983 320.0 L 243.30127018922192 425.0 z" fill="none" stroke="Rgb(127, 127, 127, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 215.0 L 200.0 220.0 L 200.0 210.0 L 208.6602540378444 205.0 z" fill="Rgb(53, 119, 52, 255)" />
+<path d="M 208.6602540378444 215.0 L 200.0 220.0 z" fill="none" stroke="Rgb(53, 119, 52, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 215.0 L 208.6602540378444 205.0 z" fill="none" stroke="Rgb(53, 119, 52, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 215.0 L 200.0 220.0 L 200.0 210.0 L 191.3397459621556 205.0 z" fill="Rgb(96, 193, 95, 255)" />
+<path d="M 191.3397459621556 215.0 L 191.3397459621556 205.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 215.0 L 200.0 220.0 z" fill="none" stroke="Rgb(96, 193, 95, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 220.0 L 200.0 210.0 z" fill="none" stroke="Rgb(96, 193, 95, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 200.0 L 208.6602540378444 205.0 L 200.0 210.0 L 191.3397459621556 205.0 z" fill="Rgb(159, 221, 158, 255)" />
+<path d="M 208.6602540378444 205.0 L 200.0 210.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 200.0 L 191.3397459621556 205.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 200.0 L 208.6602540378444 205.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 205.0 L 200.0 210.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 250.0 L 208.6602540378444 255.0 L 208.6602540378444 245.0 L 217.32050807568876 240.0 z" fill="Rgb(53, 119, 52, 255)" />
+<path d="M 217.32050807568876 250.0 L 208.6602540378444 255.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 250.0 L 217.32050807568876 240.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 250.0 L 208.6602540378444 255.0 L 208.6602540378444 245.0 L 200.0 240.0 z" fill="Rgb(96, 193, 95, 255)" />
+<path d="M 200.0 250.0 L 200.0 240.0 z" fill="none" stroke="Rgb(96, 193, 95, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 250.0 L 208.6602540378444 255.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 255.0 L 208.6602540378444 245.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 235.0 L 217.32050807568876 240.0 L 208.6602540378444 245.0 L 200.0 240.0 z" fill="Rgb(159, 221, 158, 255)" />
+<path d="M 217.32050807568876 240.0 L 208.6602540378444 245.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 235.0 L 200.0 240.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 235.0 L 217.32050807568876 240.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 208.6602540378444 245.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 240.0 L 208.6602540378444 245.0 L 208.6602540378444 235.0 L 217.32050807568876 230.0 z" fill="Rgb(53, 119, 52, 255)" />
+<path d="M 217.32050807568876 240.0 L 208.6602540378444 245.0 z" fill="none" stroke="Rgb(53, 119, 52, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 240.0 L 217.32050807568876 230.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 208.6602540378444 245.0 L 208.6602540378444 235.0 L 200.0 230.0 z" fill="Rgb(96, 193, 95, 255)" />
+<path d="M 200.0 240.0 L 200.0 230.0 z" fill="none" stroke="Rgb(96, 193, 95, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 208.6602540378444 245.0 z" fill="none" stroke="Rgb(96, 193, 95, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 245.0 L 208.6602540378444 235.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 225.0 L 217.32050807568876 230.0 L 208.6602540378444 235.0 L 200.0 230.0 z" fill="Rgb(159, 221, 158, 255)" />
+<path d="M 217.32050807568876 230.0 L 208.6602540378444 235.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 225.0 L 200.0 230.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 225.0 L 217.32050807568876 230.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 230.0 L 208.6602540378444 235.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 230.0 L 208.6602540378444 235.0 L 208.6602540378444 225.0 L 217.32050807568876 220.0 z" fill="Rgb(53, 119, 52, 255)" />
+<path d="M 217.32050807568876 230.0 L 208.6602540378444 235.0 z" fill="none" stroke="Rgb(53, 119, 52, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 230.0 L 217.32050807568876 220.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 230.0 L 208.6602540378444 235.0 L 208.6602540378444 225.0 L 200.0 220.0 z" fill="Rgb(96, 193, 95, 255)" />
+<path d="M 200.0 230.0 L 200.0 220.0 z" fill="none" stroke="Rgb(96, 193, 95, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 230.0 L 208.6602540378444 235.0 z" fill="none" stroke="Rgb(96, 193, 95, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 235.0 L 208.6602540378444 225.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 215.0 L 217.32050807568876 220.0 L 208.6602540378444 225.0 L 200.0 220.0 z" fill="Rgb(159, 221, 158, 255)" />
+<path d="M 217.32050807568876 220.0 L 208.6602540378444 225.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 215.0 L 200.0 220.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 215.0 L 217.32050807568876 220.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 220.0 L 208.6602540378444 225.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 220.0 L 208.6602540378444 225.0 L 208.6602540378444 215.0 L 217.32050807568876 210.0 z" fill="Rgb(53, 119, 52, 255)" />
+<path d="M 217.32050807568876 220.0 L 208.6602540378444 225.0 z" fill="none" stroke="Rgb(53, 119, 52, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 220.0 L 217.32050807568876 210.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 220.0 L 208.6602540378444 225.0 L 208.6602540378444 215.0 L 200.0 210.0 z" fill="Rgb(96, 193, 95, 255)" />
+<path d="M 200.0 220.0 L 200.0 210.0 z" fill="none" stroke="Rgb(96, 193, 95, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 220.0 L 208.6602540378444 225.0 z" fill="none" stroke="Rgb(96, 193, 95, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 225.0 L 208.6602540378444 215.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 205.0 L 217.32050807568876 210.0 L 208.6602540378444 215.0 L 200.0 210.0 z" fill="Rgb(159, 221, 158, 255)" />
+<path d="M 217.32050807568876 210.0 L 208.6602540378444 215.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 205.0 L 200.0 210.0 z" fill="none" stroke="Rgb(159, 221, 158, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 205.0 L 217.32050807568876 210.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 210.0 L 208.6602540378444 215.0 z" fill="none" stroke="Rgb(20, 46, 20, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 220.0 L 191.3397459621556 225.0 L 191.3397459621556 215.0 L 200.0 210.0 z" fill="Rgb(91, 53, 129, 255)" />
+<path d="M 200.0 220.0 L 191.3397459621556 225.0 z" fill="none" stroke="Rgb(91, 53, 129, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 220.0 L 200.0 210.0 z" fill="none" stroke="Rgb(91, 53, 129, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 220.0 L 191.3397459621556 225.0 L 191.3397459621556 215.0 L 182.67949192431124 210.0 z" fill="Rgb(152, 98, 208, 255)" />
+<path d="M 182.67949192431124 220.0 L 182.67949192431124 210.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 220.0 L 191.3397459621556 225.0 z" fill="none" stroke="Rgb(152, 98, 208, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 225.0 L 191.3397459621556 215.0 z" fill="none" stroke="Rgb(152, 98, 208, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 205.0 L 200.0 210.0 L 191.3397459621556 215.0 L 182.67949192431124 210.0 z" fill="Rgb(195, 161, 228, 255)" />
+<path d="M 200.0 210.0 L 191.3397459621556 215.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 205.0 L 182.67949192431124 210.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 205.0 L 200.0 210.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 210.0 L 191.3397459621556 215.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 225.0 L 200.0 230.0 L 200.0 220.0 L 208.6602540378444 215.0 z" fill="Rgb(91, 53, 129, 255)" />
+<path d="M 208.6602540378444 225.0 L 200.0 230.0 z" fill="none" stroke="Rgb(91, 53, 129, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 225.0 L 208.6602540378444 215.0 z" fill="none" stroke="Rgb(91, 53, 129, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 225.0 L 200.0 230.0 L 200.0 220.0 L 191.3397459621556 215.0 z" fill="Rgb(152, 98, 208, 255)" />
+<path d="M 191.3397459621556 225.0 L 191.3397459621556 215.0 z" fill="none" stroke="Rgb(152, 98, 208, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 225.0 L 200.0 230.0 z" fill="none" stroke="Rgb(152, 98, 208, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 230.0 L 200.0 220.0 z" fill="none" stroke="Rgb(152, 98, 208, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 210.0 L 208.6602540378444 215.0 L 200.0 220.0 L 191.3397459621556 215.0 z" fill="Rgb(195, 161, 228, 255)" />
+<path d="M 208.6602540378444 215.0 L 200.0 220.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 210.0 L 191.3397459621556 215.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 210.0 L 208.6602540378444 215.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 215.0 L 200.0 220.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 225.0 L 182.67949192431124 230.0 L 182.67949192431124 220.0 L 191.3397459621556 215.0 z" fill="Rgb(53, 67, 137, 255)" />
+<path d="M 191.3397459621556 225.0 L 182.67949192431124 230.0 z" fill="none" stroke="Rgb(53, 67, 137, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 225.0 L 191.3397459621556 215.0 z" fill="none" stroke="Rgb(53, 67, 137, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 225.0 L 182.67949192431124 230.0 L 182.67949192431124 220.0 L 174.01923788646684 215.0 z" fill="Rgb(97, 119, 219, 255)" />
+<path d="M 174.01923788646684 225.0 L 174.01923788646684 215.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 225.0 L 182.67949192431124 230.0 z" fill="none" stroke="Rgb(97, 119, 219, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 230.0 L 182.67949192431124 220.0 z" fill="none" stroke="Rgb(97, 119, 219, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 210.0 L 191.3397459621556 215.0 L 182.67949192431124 220.0 L 174.01923788646684 215.0 z" fill="Rgb(162, 175, 235, 255)" />
+<path d="M 191.3397459621556 215.0 L 182.67949192431124 220.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 210.0 L 174.01923788646684 215.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 210.0 L 191.3397459621556 215.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 215.0 L 182.67949192431124 220.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 260.0 L 208.6602540378444 265.0 L 208.6602540378444 255.0 L 217.32050807568876 250.0 z" fill="Rgb(91, 53, 129, 255)" />
+<path d="M 217.32050807568876 260.0 L 208.6602540378444 265.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 260.0 L 217.32050807568876 250.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 260.0 L 208.6602540378444 265.0 L 208.6602540378444 255.0 L 200.0 250.0 z" fill="Rgb(152, 98, 208, 255)" />
+<path d="M 200.0 260.0 L 200.0 250.0 z" fill="none" stroke="Rgb(152, 98, 208, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 260.0 L 208.6602540378444 265.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 265.0 L 208.6602540378444 255.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 245.0 L 217.32050807568876 250.0 L 208.6602540378444 255.0 L 200.0 250.0 z" fill="Rgb(195, 161, 228, 255)" />
+<path d="M 217.32050807568876 250.0 L 208.6602540378444 255.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 245.0 L 200.0 250.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 245.0 L 217.32050807568876 250.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 250.0 L 208.6602540378444 255.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 250.0 L 208.6602540378444 255.0 L 208.6602540378444 245.0 L 217.32050807568876 240.0 z" fill="Rgb(91, 53, 129, 255)" />
+<path d="M 217.32050807568876 250.0 L 208.6602540378444 255.0 z" fill="none" stroke="Rgb(91, 53, 129, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 250.0 L 217.32050807568876 240.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 250.0 L 208.6602540378444 255.0 L 208.6602540378444 245.0 L 200.0 240.0 z" fill="Rgb(152, 98, 208, 255)" />
+<path d="M 200.0 250.0 L 200.0 240.0 z" fill="none" stroke="Rgb(152, 98, 208, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 250.0 L 208.6602540378444 255.0 z" fill="none" stroke="Rgb(152, 98, 208, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 255.0 L 208.6602540378444 245.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 235.0 L 217.32050807568876 240.0 L 208.6602540378444 245.0 L 200.0 240.0 z" fill="Rgb(195, 161, 228, 255)" />
+<path d="M 217.32050807568876 240.0 L 208.6602540378444 245.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 235.0 L 200.0 240.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 235.0 L 217.32050807568876 240.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 208.6602540378444 245.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 240.0 L 208.6602540378444 245.0 L 208.6602540378444 235.0 L 217.32050807568876 230.0 z" fill="Rgb(91, 53, 129, 255)" />
+<path d="M 217.32050807568876 240.0 L 208.6602540378444 245.0 z" fill="none" stroke="Rgb(91, 53, 129, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 240.0 L 217.32050807568876 230.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 208.6602540378444 245.0 L 208.6602540378444 235.0 L 200.0 230.0 z" fill="Rgb(152, 98, 208, 255)" />
+<path d="M 200.0 240.0 L 200.0 230.0 z" fill="none" stroke="Rgb(152, 98, 208, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 208.6602540378444 245.0 z" fill="none" stroke="Rgb(152, 98, 208, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 245.0 L 208.6602540378444 235.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 225.0 L 217.32050807568876 230.0 L 208.6602540378444 235.0 L 200.0 230.0 z" fill="Rgb(195, 161, 228, 255)" />
+<path d="M 217.32050807568876 230.0 L 208.6602540378444 235.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 225.0 L 200.0 230.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 225.0 L 217.32050807568876 230.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 230.0 L 208.6602540378444 235.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 230.0 L 174.01923788646684 235.0 L 174.01923788646684 225.0 L 182.67949192431124 220.0 z" fill="Rgb(133, 75, 142, 255)" />
+<path d="M 182.67949192431124 230.0 L 174.01923788646684 235.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 230.0 L 182.67949192431124 220.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 230.0 L 174.01923788646684 235.0 L 174.01923788646684 225.0 L 165.35898384862247 220.0 z" fill="Rgb(212, 130, 226, 255)" />
+<path d="M 165.35898384862247 230.0 L 165.35898384862247 220.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 230.0 L 174.01923788646684 235.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 235.0 L 174.01923788646684 225.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 215.0 L 182.67949192431124 220.0 L 174.01923788646684 225.0 L 165.35898384862247 220.0 z" fill="Rgb(230, 182, 239, 255)" />
+<path d="M 182.67949192431124 220.0 L 174.01923788646684 225.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 215.0 L 165.35898384862247 220.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 215.0 L 182.67949192431124 220.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 220.0 L 174.01923788646684 225.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 230.0 L 208.6602540378444 235.0 L 208.6602540378444 225.0 L 217.32050807568876 220.0 z" fill="Rgb(91, 53, 129, 255)" />
+<path d="M 217.32050807568876 230.0 L 208.6602540378444 235.0 z" fill="none" stroke="Rgb(91, 53, 129, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 217.32050807568876 230.0 L 217.32050807568876 220.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 230.0 L 208.6602540378444 235.0 L 208.6602540378444 225.0 L 200.0 220.0 z" fill="Rgb(152, 98, 208, 255)" />
+<path d="M 200.0 230.0 L 200.0 220.0 z" fill="none" stroke="Rgb(152, 98, 208, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 230.0 L 208.6602540378444 235.0 z" fill="none" stroke="Rgb(152, 98, 208, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 235.0 L 208.6602540378444 225.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 215.0 L 217.32050807568876 220.0 L 208.6602540378444 225.0 L 200.0 220.0 z" fill="Rgb(195, 161, 228, 255)" />
+<path d="M 217.32050807568876 220.0 L 208.6602540378444 225.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 215.0 L 200.0 220.0 z" fill="none" stroke="Rgb(195, 161, 228, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 215.0 L 217.32050807568876 220.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 220.0 L 208.6602540378444 225.0 z" fill="none" stroke="Rgb(35, 20, 50, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 230.0 L 191.3397459621556 235.0 L 191.3397459621556 225.0 L 200.0 220.0 z" fill="Rgb(53, 67, 137, 255)" />
+<path d="M 200.0 230.0 L 191.3397459621556 235.0 z" fill="none" stroke="Rgb(53, 67, 137, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 230.0 L 200.0 220.0 z" fill="none" stroke="Rgb(53, 67, 137, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 230.0 L 191.3397459621556 235.0 L 191.3397459621556 225.0 L 182.67949192431124 220.0 z" fill="Rgb(97, 119, 219, 255)" />
+<path d="M 182.67949192431124 230.0 L 182.67949192431124 220.0 z" fill="none" stroke="Rgb(97, 119, 219, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 230.0 L 191.3397459621556 235.0 z" fill="none" stroke="Rgb(97, 119, 219, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 235.0 L 191.3397459621556 225.0 z" fill="none" stroke="Rgb(97, 119, 219, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 215.0 L 200.0 220.0 L 191.3397459621556 225.0 L 182.67949192431124 220.0 z" fill="Rgb(162, 175, 235, 255)" />
+<path d="M 200.0 220.0 L 191.3397459621556 225.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 215.0 L 182.67949192431124 220.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 215.0 L 200.0 220.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 220.0 L 191.3397459621556 225.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 265.0 L 200.0 270.0 L 200.0 260.0 L 208.6602540378444 255.0 z" fill="Rgb(53, 67, 137, 255)" />
+<path d="M 208.6602540378444 265.0 L 200.0 270.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 265.0 L 208.6602540378444 255.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 265.0 L 200.0 270.0 L 200.0 260.0 L 191.3397459621556 255.0 z" fill="Rgb(97, 119, 219, 255)" />
+<path d="M 191.3397459621556 265.0 L 191.3397459621556 255.0 z" fill="none" stroke="Rgb(97, 119, 219, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 265.0 L 200.0 270.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 270.0 L 200.0 260.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 250.0 L 208.6602540378444 255.0 L 200.0 260.0 L 191.3397459621556 255.0 z" fill="Rgb(162, 175, 235, 255)" />
+<path d="M 208.6602540378444 255.0 L 200.0 260.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 250.0 L 191.3397459621556 255.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 250.0 L 208.6602540378444 255.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 255.0 L 200.0 260.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 255.0 L 200.0 260.0 L 200.0 250.0 L 208.6602540378444 245.0 z" fill="Rgb(53, 67, 137, 255)" />
+<path d="M 208.6602540378444 255.0 L 200.0 260.0 z" fill="none" stroke="Rgb(53, 67, 137, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 255.0 L 208.6602540378444 245.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 255.0 L 200.0 260.0 L 200.0 250.0 L 191.3397459621556 245.0 z" fill="Rgb(97, 119, 219, 255)" />
+<path d="M 191.3397459621556 255.0 L 191.3397459621556 245.0 z" fill="none" stroke="Rgb(97, 119, 219, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 255.0 L 200.0 260.0 z" fill="none" stroke="Rgb(97, 119, 219, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 260.0 L 200.0 250.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 208.6602540378444 245.0 L 200.0 250.0 L 191.3397459621556 245.0 z" fill="Rgb(162, 175, 235, 255)" />
+<path d="M 208.6602540378444 245.0 L 200.0 250.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 191.3397459621556 245.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 208.6602540378444 245.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 245.0 L 200.0 250.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 245.0 L 200.0 250.0 L 200.0 240.0 L 208.6602540378444 235.0 z" fill="Rgb(53, 67, 137, 255)" />
+<path d="M 208.6602540378444 245.0 L 200.0 250.0 z" fill="none" stroke="Rgb(53, 67, 137, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 245.0 L 208.6602540378444 235.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 245.0 L 200.0 250.0 L 200.0 240.0 L 191.3397459621556 235.0 z" fill="Rgb(97, 119, 219, 255)" />
+<path d="M 191.3397459621556 245.0 L 191.3397459621556 235.0 z" fill="none" stroke="Rgb(97, 119, 219, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 245.0 L 200.0 250.0 z" fill="none" stroke="Rgb(97, 119, 219, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 250.0 L 200.0 240.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 230.0 L 208.6602540378444 235.0 L 200.0 240.0 L 191.3397459621556 235.0 z" fill="Rgb(162, 175, 235, 255)" />
+<path d="M 208.6602540378444 235.0 L 200.0 240.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 230.0 L 191.3397459621556 235.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 230.0 L 208.6602540378444 235.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 235.0 L 200.0 240.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 235.0 L 165.35898384862247 240.0 L 165.35898384862247 230.0 L 174.01923788646684 225.0 z" fill="Rgb(133, 75, 142, 255)" />
+<path d="M 174.01923788646684 235.0 L 165.35898384862247 240.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 235.0 L 174.01923788646684 225.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 235.0 L 165.35898384862247 240.0 L 165.35898384862247 230.0 L 156.69872981077808 225.0 z" fill="Rgb(212, 130, 226, 255)" />
+<path d="M 156.69872981077808 235.0 L 156.69872981077808 225.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 235.0 L 165.35898384862247 240.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 240.0 L 165.35898384862247 230.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 220.0 L 174.01923788646684 225.0 L 165.35898384862247 230.0 L 156.69872981077808 225.0 z" fill="Rgb(230, 182, 239, 255)" />
+<path d="M 174.01923788646684 225.0 L 165.35898384862247 230.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 220.0 L 156.69872981077808 225.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 220.0 L 174.01923788646684 225.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 225.0 L 165.35898384862247 230.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 235.0 L 182.67949192431124 240.0 L 182.67949192431124 230.0 L 191.3397459621556 225.0 z" fill="Rgb(133, 75, 142, 255)" />
+<path d="M 191.3397459621556 235.0 L 182.67949192431124 240.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 235.0 L 191.3397459621556 225.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 235.0 L 182.67949192431124 240.0 L 182.67949192431124 230.0 L 174.01923788646684 225.0 z" fill="Rgb(212, 130, 226, 255)" />
+<path d="M 174.01923788646684 235.0 L 174.01923788646684 225.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 235.0 L 182.67949192431124 240.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 240.0 L 182.67949192431124 230.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 220.0 L 191.3397459621556 225.0 L 182.67949192431124 230.0 L 174.01923788646684 225.0 z" fill="Rgb(230, 182, 239, 255)" />
+<path d="M 191.3397459621556 225.0 L 182.67949192431124 230.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 220.0 L 174.01923788646684 225.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 220.0 L 191.3397459621556 225.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 225.0 L 182.67949192431124 230.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 235.0 L 200.0 240.0 L 200.0 230.0 L 208.6602540378444 225.0 z" fill="Rgb(53, 67, 137, 255)" />
+<path d="M 208.6602540378444 235.0 L 200.0 240.0 z" fill="none" stroke="Rgb(53, 67, 137, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 208.6602540378444 235.0 L 208.6602540378444 225.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 235.0 L 200.0 240.0 L 200.0 230.0 L 191.3397459621556 225.0 z" fill="Rgb(97, 119, 219, 255)" />
+<path d="M 191.3397459621556 235.0 L 191.3397459621556 225.0 z" fill="none" stroke="Rgb(97, 119, 219, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 235.0 L 200.0 240.0 z" fill="none" stroke="Rgb(97, 119, 219, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 200.0 230.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 220.0 L 208.6602540378444 225.0 L 200.0 230.0 L 191.3397459621556 225.0 z" fill="Rgb(162, 175, 235, 255)" />
+<path d="M 208.6602540378444 225.0 L 200.0 230.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 220.0 L 191.3397459621556 225.0 z" fill="none" stroke="Rgb(162, 175, 235, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 220.0 L 208.6602540378444 225.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 225.0 L 200.0 230.0 z" fill="none" stroke="Rgb(20, 26, 53, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 270.0 L 191.3397459621556 275.0 L 191.3397459621556 265.0 L 200.0 260.0 z" fill="Rgb(133, 75, 142, 255)" />
+<path d="M 200.0 270.0 L 191.3397459621556 275.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 270.0 L 200.0 260.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 270.0 L 191.3397459621556 275.0 L 191.3397459621556 265.0 L 182.67949192431124 260.0 z" fill="Rgb(212, 130, 226, 255)" />
+<path d="M 182.67949192431124 270.0 L 182.67949192431124 260.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 270.0 L 191.3397459621556 275.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 275.0 L 191.3397459621556 265.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 255.0 L 200.0 260.0 L 191.3397459621556 265.0 L 182.67949192431124 260.0 z" fill="Rgb(230, 182, 239, 255)" />
+<path d="M 200.0 260.0 L 191.3397459621556 265.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 255.0 L 182.67949192431124 260.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 255.0 L 200.0 260.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 260.0 L 191.3397459621556 265.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 260.0 L 191.3397459621556 265.0 L 191.3397459621556 255.0 L 200.0 250.0 z" fill="Rgb(133, 75, 142, 255)" />
+<path d="M 200.0 260.0 L 191.3397459621556 265.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 260.0 L 200.0 250.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 260.0 L 191.3397459621556 265.0 L 191.3397459621556 255.0 L 182.67949192431124 250.0 z" fill="Rgb(212, 130, 226, 255)" />
+<path d="M 182.67949192431124 260.0 L 182.67949192431124 250.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 260.0 L 191.3397459621556 265.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 265.0 L 191.3397459621556 255.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 245.0 L 200.0 250.0 L 191.3397459621556 255.0 L 182.67949192431124 250.0 z" fill="Rgb(230, 182, 239, 255)" />
+<path d="M 200.0 250.0 L 191.3397459621556 255.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 245.0 L 182.67949192431124 250.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 245.0 L 200.0 250.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 250.0 L 191.3397459621556 255.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 250.0 L 191.3397459621556 255.0 L 191.3397459621556 245.0 L 200.0 240.0 z" fill="Rgb(133, 75, 142, 255)" />
+<path d="M 200.0 250.0 L 191.3397459621556 255.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 250.0 L 200.0 240.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 250.0 L 191.3397459621556 255.0 L 191.3397459621556 245.0 L 182.67949192431124 240.0 z" fill="Rgb(212, 130, 226, 255)" />
+<path d="M 182.67949192431124 250.0 L 182.67949192431124 240.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 250.0 L 191.3397459621556 255.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 255.0 L 191.3397459621556 245.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 235.0 L 200.0 240.0 L 191.3397459621556 245.0 L 182.67949192431124 240.0 z" fill="Rgb(230, 182, 239, 255)" />
+<path d="M 200.0 240.0 L 191.3397459621556 245.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 235.0 L 182.67949192431124 240.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 235.0 L 200.0 240.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 240.0 L 191.3397459621556 245.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 250.0 L 156.69872981077808 255.0 L 156.69872981077808 245.0 L 165.35898384862247 240.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 165.35898384862247 250.0 L 156.69872981077808 255.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 250.0 L 165.35898384862247 240.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 250.0 L 156.69872981077808 255.0 L 156.69872981077808 245.0 L 148.03847577293368 240.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 148.03847577293368 250.0 L 148.03847577293368 240.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 250.0 L 156.69872981077808 255.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 255.0 L 156.69872981077808 245.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 235.0 L 165.35898384862247 240.0 L 156.69872981077808 245.0 L 148.03847577293368 240.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 165.35898384862247 240.0 L 156.69872981077808 245.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 235.0 L 148.03847577293368 240.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 235.0 L 165.35898384862247 240.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 240.0 L 156.69872981077808 245.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 240.0 L 174.01923788646684 245.0 L 174.01923788646684 235.0 L 182.67949192431124 230.0 z" fill="Rgb(133, 75, 142, 255)" />
+<path d="M 182.67949192431124 240.0 L 174.01923788646684 245.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 240.0 L 182.67949192431124 230.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 240.0 L 174.01923788646684 245.0 L 174.01923788646684 235.0 L 165.35898384862247 230.0 z" fill="Rgb(212, 130, 226, 255)" />
+<path d="M 165.35898384862247 240.0 L 165.35898384862247 230.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 240.0 L 174.01923788646684 245.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 245.0 L 174.01923788646684 235.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 225.0 L 182.67949192431124 230.0 L 174.01923788646684 235.0 L 165.35898384862247 230.0 z" fill="Rgb(230, 182, 239, 255)" />
+<path d="M 182.67949192431124 230.0 L 174.01923788646684 235.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 225.0 L 165.35898384862247 230.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 225.0 L 182.67949192431124 230.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 230.0 L 174.01923788646684 235.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 191.3397459621556 245.0 L 191.3397459621556 235.0 L 200.0 230.0 z" fill="Rgb(133, 75, 142, 255)" />
+<path d="M 200.0 240.0 L 191.3397459621556 245.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 200.0 240.0 L 200.0 230.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 240.0 L 191.3397459621556 245.0 L 191.3397459621556 235.0 L 182.67949192431124 230.0 z" fill="Rgb(212, 130, 226, 255)" />
+<path d="M 182.67949192431124 240.0 L 182.67949192431124 230.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 240.0 L 191.3397459621556 245.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 245.0 L 191.3397459621556 235.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 225.0 L 200.0 230.0 L 191.3397459621556 235.0 L 182.67949192431124 230.0 z" fill="Rgb(230, 182, 239, 255)" />
+<path d="M 200.0 230.0 L 191.3397459621556 235.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 225.0 L 182.67949192431124 230.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 225.0 L 200.0 230.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 230.0 L 191.3397459621556 235.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 275.0 L 182.67949192431124 280.0 L 182.67949192431124 270.0 L 191.3397459621556 265.0 z" fill="Rgb(133, 75, 142, 255)" />
+<path d="M 191.3397459621556 275.0 L 182.67949192431124 280.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 275.0 L 191.3397459621556 265.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 275.0 L 182.67949192431124 280.0 L 182.67949192431124 270.0 L 174.01923788646684 265.0 z" fill="Rgb(212, 130, 226, 255)" />
+<path d="M 174.01923788646684 275.0 L 174.01923788646684 265.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 275.0 L 182.67949192431124 280.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 280.0 L 182.67949192431124 270.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 260.0 L 191.3397459621556 265.0 L 182.67949192431124 270.0 L 174.01923788646684 265.0 z" fill="Rgb(230, 182, 239, 255)" />
+<path d="M 191.3397459621556 265.0 L 182.67949192431124 270.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 260.0 L 174.01923788646684 265.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 260.0 L 191.3397459621556 265.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 265.0 L 182.67949192431124 270.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 265.0 L 182.67949192431124 270.0 L 182.67949192431124 260.0 L 191.3397459621556 255.0 z" fill="Rgb(133, 75, 142, 255)" />
+<path d="M 191.3397459621556 265.0 L 182.67949192431124 270.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 265.0 L 191.3397459621556 255.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 265.0 L 182.67949192431124 270.0 L 182.67949192431124 260.0 L 174.01923788646684 255.0 z" fill="Rgb(212, 130, 226, 255)" />
+<path d="M 174.01923788646684 265.0 L 174.01923788646684 255.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 265.0 L 182.67949192431124 270.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 270.0 L 182.67949192431124 260.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 250.0 L 191.3397459621556 255.0 L 182.67949192431124 260.0 L 174.01923788646684 255.0 z" fill="Rgb(230, 182, 239, 255)" />
+<path d="M 191.3397459621556 255.0 L 182.67949192431124 260.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 250.0 L 174.01923788646684 255.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 250.0 L 191.3397459621556 255.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 255.0 L 182.67949192431124 260.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 255.0 L 182.67949192431124 260.0 L 182.67949192431124 250.0 L 191.3397459621556 245.0 z" fill="Rgb(133, 75, 142, 255)" />
+<path d="M 191.3397459621556 255.0 L 182.67949192431124 260.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 255.0 L 191.3397459621556 245.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 255.0 L 182.67949192431124 260.0 L 182.67949192431124 250.0 L 174.01923788646684 245.0 z" fill="Rgb(212, 130, 226, 255)" />
+<path d="M 174.01923788646684 255.0 L 174.01923788646684 245.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 255.0 L 182.67949192431124 260.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 260.0 L 182.67949192431124 250.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 240.0 L 191.3397459621556 245.0 L 182.67949192431124 250.0 L 174.01923788646684 245.0 z" fill="Rgb(230, 182, 239, 255)" />
+<path d="M 191.3397459621556 245.0 L 182.67949192431124 250.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 240.0 L 174.01923788646684 245.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 240.0 L 191.3397459621556 245.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 245.0 L 182.67949192431124 250.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 255.0 L 148.03847577293368 260.0 L 148.03847577293368 250.0 L 156.69872981077808 245.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 156.69872981077808 255.0 L 148.03847577293368 260.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 255.0 L 156.69872981077808 245.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 255.0 L 148.03847577293368 260.0 L 148.03847577293368 250.0 L 139.3782217350893 245.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 139.3782217350893 255.0 L 139.3782217350893 245.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 255.0 L 148.03847577293368 260.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 260.0 L 148.03847577293368 250.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 240.0 L 156.69872981077808 245.0 L 148.03847577293368 250.0 L 139.3782217350893 245.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 156.69872981077808 245.0 L 148.03847577293368 250.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 240.0 L 139.3782217350893 245.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 240.0 L 156.69872981077808 245.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 245.0 L 148.03847577293368 250.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 255.0 L 165.35898384862247 260.0 L 165.35898384862247 250.0 L 174.01923788646684 245.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 174.01923788646684 255.0 L 165.35898384862247 260.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 255.0 L 174.01923788646684 245.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 255.0 L 165.35898384862247 260.0 L 165.35898384862247 250.0 L 156.69872981077808 245.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 156.69872981077808 255.0 L 156.69872981077808 245.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 255.0 L 165.35898384862247 260.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 260.0 L 165.35898384862247 250.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 240.0 L 174.01923788646684 245.0 L 165.35898384862247 250.0 L 156.69872981077808 245.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 174.01923788646684 245.0 L 165.35898384862247 250.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 240.0 L 156.69872981077808 245.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 240.0 L 174.01923788646684 245.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 245.0 L 165.35898384862247 250.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 245.0 L 182.67949192431124 250.0 L 182.67949192431124 240.0 L 191.3397459621556 235.0 z" fill="Rgb(133, 75, 142, 255)" />
+<path d="M 191.3397459621556 245.0 L 182.67949192431124 250.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 191.3397459621556 245.0 L 191.3397459621556 235.0 z" fill="none" stroke="Rgb(133, 75, 142, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 245.0 L 182.67949192431124 250.0 L 182.67949192431124 240.0 L 174.01923788646684 235.0 z" fill="Rgb(212, 130, 226, 255)" />
+<path d="M 174.01923788646684 245.0 L 174.01923788646684 235.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 245.0 L 182.67949192431124 250.0 z" fill="none" stroke="Rgb(212, 130, 226, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 250.0 L 182.67949192431124 240.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 230.0 L 191.3397459621556 235.0 L 182.67949192431124 240.0 L 174.01923788646684 235.0 z" fill="Rgb(230, 182, 239, 255)" />
+<path d="M 191.3397459621556 235.0 L 182.67949192431124 240.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 230.0 L 174.01923788646684 235.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 230.0 L 191.3397459621556 235.0 z" fill="none" stroke="Rgb(230, 182, 239, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 235.0 L 182.67949192431124 240.0 z" fill="none" stroke="Rgb(52, 29, 55, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 280.0 L 139.3782217350893 285.0 L 139.3782217350893 275.0 L 148.03847577293368 270.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 148.03847577293368 280.0 L 139.3782217350893 285.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 280.0 L 148.03847577293368 270.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 130.71796769724492 280.0 L 139.3782217350893 285.0 L 139.3782217350893 275.0 L 130.71796769724492 270.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 130.71796769724492 280.0 L 130.71796769724492 270.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 130.71796769724492 280.0 L 139.3782217350893 285.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 285.0 L 139.3782217350893 275.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 265.0 L 148.03847577293368 270.0 L 139.3782217350893 275.0 L 130.71796769724492 270.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 148.03847577293368 270.0 L 139.3782217350893 275.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 265.0 L 130.71796769724492 270.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 265.0 L 148.03847577293368 270.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 130.71796769724492 270.0 L 139.3782217350893 275.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 280.0 L 174.01923788646684 285.0 L 174.01923788646684 275.0 L 182.67949192431124 270.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 182.67949192431124 280.0 L 174.01923788646684 285.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 280.0 L 182.67949192431124 270.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 280.0 L 174.01923788646684 285.0 L 174.01923788646684 275.0 L 165.35898384862247 270.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 165.35898384862247 280.0 L 165.35898384862247 270.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 280.0 L 174.01923788646684 285.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 285.0 L 174.01923788646684 275.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 265.0 L 182.67949192431124 270.0 L 174.01923788646684 275.0 L 165.35898384862247 270.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 182.67949192431124 270.0 L 174.01923788646684 275.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 265.0 L 165.35898384862247 270.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 265.0 L 182.67949192431124 270.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 270.0 L 174.01923788646684 275.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 270.0 L 139.3782217350893 275.0 L 139.3782217350893 265.0 L 148.03847577293368 260.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 148.03847577293368 270.0 L 139.3782217350893 275.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 270.0 L 148.03847577293368 260.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 130.71796769724492 270.0 L 139.3782217350893 275.0 L 139.3782217350893 265.0 L 130.71796769724492 260.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 130.71796769724492 270.0 L 130.71796769724492 260.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 130.71796769724492 270.0 L 139.3782217350893 275.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 275.0 L 139.3782217350893 265.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 255.0 L 148.03847577293368 260.0 L 139.3782217350893 265.0 L 130.71796769724492 260.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 148.03847577293368 260.0 L 139.3782217350893 265.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 255.0 L 130.71796769724492 260.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 255.0 L 148.03847577293368 260.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 130.71796769724492 260.0 L 139.3782217350893 265.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 270.0 L 174.01923788646684 275.0 L 174.01923788646684 265.0 L 182.67949192431124 260.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 182.67949192431124 270.0 L 174.01923788646684 275.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 270.0 L 182.67949192431124 260.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 270.0 L 174.01923788646684 275.0 L 174.01923788646684 265.0 L 165.35898384862247 260.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 165.35898384862247 270.0 L 165.35898384862247 260.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 270.0 L 174.01923788646684 275.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 275.0 L 174.01923788646684 265.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 255.0 L 182.67949192431124 260.0 L 174.01923788646684 265.0 L 165.35898384862247 260.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 182.67949192431124 260.0 L 174.01923788646684 265.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 255.0 L 165.35898384862247 260.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 255.0 L 182.67949192431124 260.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 260.0 L 174.01923788646684 265.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 260.0 L 139.3782217350893 265.0 L 139.3782217350893 255.0 L 148.03847577293368 250.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 148.03847577293368 260.0 L 139.3782217350893 265.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 260.0 L 148.03847577293368 250.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 130.71796769724492 260.0 L 139.3782217350893 265.0 L 139.3782217350893 255.0 L 130.71796769724492 250.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 130.71796769724492 260.0 L 130.71796769724492 250.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 130.71796769724492 260.0 L 139.3782217350893 265.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 265.0 L 139.3782217350893 255.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 245.0 L 148.03847577293368 250.0 L 139.3782217350893 255.0 L 130.71796769724492 250.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 148.03847577293368 250.0 L 139.3782217350893 255.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 245.0 L 130.71796769724492 250.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 245.0 L 148.03847577293368 250.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 130.71796769724492 250.0 L 139.3782217350893 255.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 260.0 L 156.69872981077808 265.0 L 156.69872981077808 255.0 L 165.35898384862247 250.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 165.35898384862247 260.0 L 156.69872981077808 265.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 260.0 L 165.35898384862247 250.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 260.0 L 156.69872981077808 265.0 L 156.69872981077808 255.0 L 148.03847577293368 250.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 148.03847577293368 260.0 L 148.03847577293368 250.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 260.0 L 156.69872981077808 265.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 265.0 L 156.69872981077808 255.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 245.0 L 165.35898384862247 250.0 L 156.69872981077808 255.0 L 148.03847577293368 250.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 165.35898384862247 250.0 L 156.69872981077808 255.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 245.0 L 148.03847577293368 250.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 245.0 L 165.35898384862247 250.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 250.0 L 156.69872981077808 255.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 260.0 L 174.01923788646684 265.0 L 174.01923788646684 255.0 L 182.67949192431124 250.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 182.67949192431124 260.0 L 174.01923788646684 265.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 182.67949192431124 260.0 L 182.67949192431124 250.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 260.0 L 174.01923788646684 265.0 L 174.01923788646684 255.0 L 165.35898384862247 250.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 165.35898384862247 260.0 L 165.35898384862247 250.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 260.0 L 174.01923788646684 265.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 265.0 L 174.01923788646684 255.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 245.0 L 182.67949192431124 250.0 L 174.01923788646684 255.0 L 165.35898384862247 250.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 182.67949192431124 250.0 L 174.01923788646684 255.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 245.0 L 165.35898384862247 250.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 245.0 L 182.67949192431124 250.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 250.0 L 174.01923788646684 255.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 285.0 L 148.03847577293368 290.0 L 148.03847577293368 280.0 L 156.69872981077808 275.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 156.69872981077808 285.0 L 148.03847577293368 290.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 285.0 L 156.69872981077808 275.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 285.0 L 148.03847577293368 290.0 L 148.03847577293368 280.0 L 139.3782217350893 275.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 139.3782217350893 285.0 L 139.3782217350893 275.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 285.0 L 148.03847577293368 290.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 290.0 L 148.03847577293368 280.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 270.0 L 156.69872981077808 275.0 L 148.03847577293368 280.0 L 139.3782217350893 275.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 156.69872981077808 275.0 L 148.03847577293368 280.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 270.0 L 139.3782217350893 275.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 270.0 L 156.69872981077808 275.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 275.0 L 148.03847577293368 280.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 285.0 L 165.35898384862247 290.0 L 165.35898384862247 280.0 L 174.01923788646684 275.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 174.01923788646684 285.0 L 165.35898384862247 290.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 285.0 L 174.01923788646684 275.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 285.0 L 165.35898384862247 290.0 L 165.35898384862247 280.0 L 156.69872981077808 275.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 156.69872981077808 285.0 L 156.69872981077808 275.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 285.0 L 165.35898384862247 290.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 290.0 L 165.35898384862247 280.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 270.0 L 174.01923788646684 275.0 L 165.35898384862247 280.0 L 156.69872981077808 275.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 174.01923788646684 275.0 L 165.35898384862247 280.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 270.0 L 156.69872981077808 275.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 270.0 L 174.01923788646684 275.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 275.0 L 165.35898384862247 280.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 275.0 L 148.03847577293368 280.0 L 148.03847577293368 270.0 L 156.69872981077808 265.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 156.69872981077808 275.0 L 148.03847577293368 280.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 275.0 L 156.69872981077808 265.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 275.0 L 148.03847577293368 280.0 L 148.03847577293368 270.0 L 139.3782217350893 265.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 139.3782217350893 275.0 L 139.3782217350893 265.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 275.0 L 148.03847577293368 280.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 280.0 L 148.03847577293368 270.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 260.0 L 156.69872981077808 265.0 L 148.03847577293368 270.0 L 139.3782217350893 265.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 156.69872981077808 265.0 L 148.03847577293368 270.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 260.0 L 139.3782217350893 265.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 260.0 L 156.69872981077808 265.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 265.0 L 148.03847577293368 270.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 275.0 L 165.35898384862247 280.0 L 165.35898384862247 270.0 L 174.01923788646684 265.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 174.01923788646684 275.0 L 165.35898384862247 280.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 275.0 L 174.01923788646684 265.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 275.0 L 165.35898384862247 280.0 L 165.35898384862247 270.0 L 156.69872981077808 265.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 156.69872981077808 275.0 L 156.69872981077808 265.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 275.0 L 165.35898384862247 280.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 280.0 L 165.35898384862247 270.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 260.0 L 174.01923788646684 265.0 L 165.35898384862247 270.0 L 156.69872981077808 265.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 174.01923788646684 265.0 L 165.35898384862247 270.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 260.0 L 156.69872981077808 265.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 260.0 L 174.01923788646684 265.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 265.0 L 165.35898384862247 270.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 265.0 L 148.03847577293368 270.0 L 148.03847577293368 260.0 L 156.69872981077808 255.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 156.69872981077808 265.0 L 148.03847577293368 270.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 265.0 L 156.69872981077808 255.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 265.0 L 148.03847577293368 270.0 L 148.03847577293368 260.0 L 139.3782217350893 255.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 139.3782217350893 265.0 L 139.3782217350893 255.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 265.0 L 148.03847577293368 270.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 270.0 L 148.03847577293368 260.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 250.0 L 156.69872981077808 255.0 L 148.03847577293368 260.0 L 139.3782217350893 255.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 156.69872981077808 255.0 L 148.03847577293368 260.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 250.0 L 139.3782217350893 255.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 250.0 L 156.69872981077808 255.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 139.3782217350893 255.0 L 148.03847577293368 260.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 265.0 L 165.35898384862247 270.0 L 165.35898384862247 260.0 L 174.01923788646684 255.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 174.01923788646684 265.0 L 165.35898384862247 270.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 174.01923788646684 265.0 L 174.01923788646684 255.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 265.0 L 165.35898384862247 270.0 L 165.35898384862247 260.0 L 156.69872981077808 255.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 156.69872981077808 265.0 L 156.69872981077808 255.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 265.0 L 165.35898384862247 270.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 270.0 L 165.35898384862247 260.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 250.0 L 174.01923788646684 255.0 L 165.35898384862247 260.0 L 156.69872981077808 255.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 174.01923788646684 255.0 L 165.35898384862247 260.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 250.0 L 156.69872981077808 255.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 250.0 L 174.01923788646684 255.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 255.0 L 165.35898384862247 260.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 290.0 L 156.69872981077808 295.0 L 156.69872981077808 285.0 L 165.35898384862247 280.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 165.35898384862247 290.0 L 156.69872981077808 295.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 290.0 L 165.35898384862247 280.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 290.0 L 156.69872981077808 295.0 L 156.69872981077808 285.0 L 148.03847577293368 280.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 148.03847577293368 290.0 L 148.03847577293368 280.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 290.0 L 156.69872981077808 295.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 295.0 L 156.69872981077808 285.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 275.0 L 165.35898384862247 280.0 L 156.69872981077808 285.0 L 148.03847577293368 280.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 165.35898384862247 280.0 L 156.69872981077808 285.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 275.0 L 148.03847577293368 280.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 275.0 L 165.35898384862247 280.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 280.0 L 156.69872981077808 285.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 280.0 L 156.69872981077808 285.0 L 156.69872981077808 275.0 L 165.35898384862247 270.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 165.35898384862247 280.0 L 156.69872981077808 285.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 280.0 L 165.35898384862247 270.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 280.0 L 156.69872981077808 285.0 L 156.69872981077808 275.0 L 148.03847577293368 270.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 148.03847577293368 280.0 L 148.03847577293368 270.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 280.0 L 156.69872981077808 285.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 285.0 L 156.69872981077808 275.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 265.0 L 165.35898384862247 270.0 L 156.69872981077808 275.0 L 148.03847577293368 270.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 165.35898384862247 270.0 L 156.69872981077808 275.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 265.0 L 148.03847577293368 270.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 265.0 L 165.35898384862247 270.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 270.0 L 156.69872981077808 275.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 270.0 L 156.69872981077808 275.0 L 156.69872981077808 265.0 L 165.35898384862247 260.0 z" fill="Rgb(118, 114, 33, 255)" />
+<path d="M 165.35898384862247 270.0 L 156.69872981077808 275.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 165.35898384862247 270.0 L 165.35898384862247 260.0 z" fill="none" stroke="Rgb(118, 114, 33, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 270.0 L 156.69872981077808 275.0 L 156.69872981077808 265.0 L 148.03847577293368 260.0 z" fill="Rgb(192, 186, 68, 255)" />
+<path d="M 148.03847577293368 270.0 L 148.03847577293368 260.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 270.0 L 156.69872981077808 275.0 z" fill="none" stroke="Rgb(192, 186, 68, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 275.0 L 156.69872981077808 265.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 255.0 L 165.35898384862247 260.0 L 156.69872981077808 265.0 L 148.03847577293368 260.0 z" fill="Rgb(220, 216, 141, 255)" />
+<path d="M 165.35898384862247 260.0 L 156.69872981077808 265.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 255.0 L 148.03847577293368 260.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 156.69872981077808 255.0 L 165.35898384862247 260.0 z" fill="none" stroke="Rgb(220, 216, 141, 255)" stroke-width="0" stroke-linejoin="round" paint-order="stroke" />
+<path d="M 148.03847577293368 260.0 L 156.69872981077808 265.0 z" fill="none" stroke="Rgb(46, 44, 13, 255)" stroke-width="1" stroke-linejoin="round" paint-order="stroke" />
+<text x="221.65063509461098" y="137.5" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Camion 0</text>
+</svg>
