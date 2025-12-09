@@ -4,11 +4,8 @@
 
 Vous êtes responsable de la logistique au Service d′Acheminement National dédié au Trans-
 port d′Articles de la Compagnie Logistique Aérienne Ultra Spéciale. Vous disposez de plusieurs
-véhicules spécialisés (Technologies de Roulage Avancées, Innovantes et Novatrices pour En-
-gins Autonomes Urbains) de capacités différentes et d′une liste d′articles à livrer à différentes
-adresses. Votre objectif est d′optimiser la répartition des colis dans les véhicules pour minimiser
-le nombre de véhicules utilisés tout en respectant les capacités de charge maximale de chaque
-véhicules.
+véhicules de tailles similaires et d′une liste d′articles à livrer dans un ordre donné. Votre objectif est d′optimiser la répartition des colis dans les véhicules pour minimiser
+le nombre de véhicules utilisés.
 
 La description complète du projet est disponible en pdf `Projet RPC.pdf`
 
@@ -18,6 +15,7 @@ Ce répertoire contient les outils suivants :
 - `generate.py` : générateur de données d'entrée
 - `visualize.py` : visualisateur de données de sortie
 - `ad-hoc/` : solveur ad-hoc basé sur l'algorithme First Fit Decreasing
+- `cp-sat/` : solveur cp-sat générique
 
 ### `generate.py`
 
