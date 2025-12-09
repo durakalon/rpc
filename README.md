@@ -62,3 +62,21 @@ python ad-hoc/run.py -i input.sample -v
 # Trouver automatiquement la meilleure heuristique
 python ad-hoc/run.py -i input.sample --best -v
 ```
+
+### `cp-sat/`
+
+Solveur générique CP-SAT pour le problème de bin packing 3D. Utilise le solveur de ortools
+
+**Utilisation rapide :**
+
+```bash
+# Résoudre depuis stdin
+python cp-sat/run.py < input.sample > output.txt
+
+# Résoudre depuis un fichier
+python cp-sat/run.py -i input.sample -o output.txt
+
+# Mode verbeux avec statistiques
+python cp-sat/run.py -i input.sample -v
+```
+
